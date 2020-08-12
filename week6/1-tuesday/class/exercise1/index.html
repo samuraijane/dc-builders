@@ -10,6 +10,25 @@
   </head>
 
   <body>
+    <form>
+      <fieldset>
+        <legend>User Information</legend>
+        <p>
+          <label for="first-name"> First Name </label>
+          <input class="textbox" type="text" name="first-name" id="first-name" />
+        </p>
+        <p>
+          <label for="last-name"> Last Name </label>
+          <input class="textbox" type="text" name="Last-name" id="Last-name" />
+        </p>
+        <p>
+          <label for="phone-number"> Phone Number </label>
+          <input class="textbox"type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required/>
+        </p>
+      </fieldset>
+      <input type="submit" id="submit-button" value="submit" />
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
