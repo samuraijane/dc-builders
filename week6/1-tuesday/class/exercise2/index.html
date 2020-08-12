@@ -5,11 +5,30 @@
     <meta charset="utf-8">
     <title>Week6 – Tuesday Class Exercise 2</title>
     <meta name="description" content="Week6 – Tuesday Class Exercise 2">
-    <meta name="author" content="<yourNameGoesHere>">
+    <meta name="author" content="Lewis">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <form>
+      <fieldset>
+        <legend>My Favorite Movie Genre</legend>
+        <label for="genre-select"> What's Your favorite movie genre? </label>
+        <select name="genre" id="genre-select">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="comedy">Comedy</option>
+          <option value="documentary">documentary</option>
+          <option value="horror">Horror</option>
+          <option value="mystery">Mystery</option>
+          <option value="Anime">Anime</option>
+          <opition value="thriller">Thriller</opition>
+          <option value="animation">Animation</option>
+        </select>
+        <input type=submit value="submit"/>
+      </fieldset>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
