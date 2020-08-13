@@ -2,6 +2,8 @@ form {
   color: goldenrod;
   border-color: gold;
   font-family: fantasy;
+  height: 400px;
+  width: 400px;
 }
 fieldset {
   border-color: indianred;

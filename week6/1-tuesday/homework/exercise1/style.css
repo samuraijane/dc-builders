@@ -11,4 +11,6 @@ input {
 
 form {
   color: purple;
+  height: 500px;
+  width: 200px;
 }
