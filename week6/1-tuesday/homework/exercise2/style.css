@@ -1,0 +1,18 @@
+form {
+  color: goldenrod;
+  border-color: gold;
+  font-family: fantasy;
+}
+fieldset {
+  border-color: indianred;
+  border-style: groove;
+  border-width: 35px;
+}
+legend {
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+input {
+  background-color: lightcoral;
+}

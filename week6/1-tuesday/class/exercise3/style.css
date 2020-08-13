@@ -1,0 +1,8 @@
+form {
+  height: 30px;
+  width: 200px;
+}
+fieldset {
+  border-color: cornflowerblue;
+  border-width: 5px;
+}

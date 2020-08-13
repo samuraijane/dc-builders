@@ -1,0 +1,14 @@
+fieldset {
+  border-color: lightseagreen;
+  border-style: double;
+  border-width: 10px;
+}
+
+input {
+  color: rgb(240, 105, 240);
+  background-color: rebeccapurple;
+}
+
+form {
+  color: purple;
+}
