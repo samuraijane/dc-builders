@@ -1,0 +1,11 @@
+label, select {
+    width: 175px;
+}
+
+p {
+    display: flex;
+}
+
+.infoBox {
+    width: 300px
+}
