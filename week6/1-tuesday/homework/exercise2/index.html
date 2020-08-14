@@ -10,6 +10,38 @@
   </head>
 
   <body>
+    <form>
+      <fieldset>
+        <legend>Contact Us!</legend>
+          <p>
+            <label for="full-name">Full Name</label>
+            <input type=text id="full-name" value="full-name" />
+          </p>
+          <p>
+            <label for="e-mail"> E-mail</label>
+            <input type=text id="e-mail" value="e-mail"/>
+          </p>
+          <p>
+            <label for="Language"> What's Your Preferred Language</label>
+            <select name="Language" id="Language">
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+          </p>
+          <p>
+            <fieldset>
+              <label for="experience-input"> Reach out to us! </label>
+              <p>
+                <textarea id="experience-input" name="experience">
+                  You had a ...
+                </textarea>
+              </p>
+            </fieldset>
+          </p>
+      </fieldset>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
