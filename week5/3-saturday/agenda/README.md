@@ -24,7 +24,7 @@
 * `submit` (place inside of `<form>` in order to capture data from all other form elements at once)
 * `text`
 
-## 3. <label>
+## 3. `<label>`
 * essential for accessibility
 * can wrap around `<input />` elements to be associated with them
 * if not wrapping an `<input />`, add a `for` attribute with a value that equals the `id` of the `<input />` in order to associate it with the input
