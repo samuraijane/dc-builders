@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Week6 – Tuesday Homework Exercise 2</title>
+    <meta name="description" content="Week6 – Tuesday Homework Exercise 2">
+    <meta name="author" content="<yourNameGoesHere>">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form id="form">
+      <fieldset class="container">
+        <legend>Contact Us</legend>
+
+        <p>
+          <label for="name"></label>
+          <input type="text" id="name" value="name" name="name" />
+        </p>
+
+        <p>
+          <label for="e-mail"></label>
+          <input type="text" id="e-mail" value="e-mail" name="e-mail" />
+        </p>
+        
+        <p>
+          <label for="language-select">What language do you speak?</label>
+        </p>
+        <select name="language-select" id="language-select">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="portuguese">Portuguese</option>
+        </select>
+        
+        <p><label for="contact-input"> Tell us why you are reaching out! </label></p>
+        <p>
+          <textarea id="contact-input" value="contact-input" name="contact-input">I had a...</textarea>
+        </p>
+
+      </fieldset>
+
+      <input type="submit" value="submit" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

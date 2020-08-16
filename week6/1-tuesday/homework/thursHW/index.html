@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Week6 – Tuesday Homework Exercise 1</title>
+    <meta name="description" content="Week6 – Tuesday Homework Exercise 1">
+    <meta name="author" content="caitlin">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form id="form">
+      <fieldset class="container">
+        <legend>Information</legend>
+
+        <p>
+          <label for="name"></label>
+          <input type="text" id="name" value="name" name="name" />
+        </p>
+          <label for="e-mail"></label>
+          <input type="text" id="e-mail" value="e-mail" name="e-mail" />
+        <p>
+          <label for="city"></label>
+          <input type="text" id="city" value="city" name="city" />
+        </p>
+
+        <p>
+          <label for="bike">What bike do you ride? Pick all that apply.</label>
+          <div class="bike-container" id="bike">
+            <label><input type="checkbox" id="road-bike" value="road-bike" name="road-bike" />Road Bike &#128692;</label>
+            <label><input type="checkbox" id="cruiser-bike" value="cruiser-bike" name="cruiser-bike" />Cruiser Bike</label>
+            <label><input type="checkbox" id="mountain-bike" value="mountain-bike" name="mountain-bike" />Mountain Bike &#128690;</label>
+          </div>
+        </p>
+        
+      </fieldset>
+
+      <input type="submit" value="submit" />
+
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
