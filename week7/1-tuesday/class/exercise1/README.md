@@ -1,4 +1,4 @@
-# Exercise
+# Exercise 1: Advanced Git
 
 Visit [Learn Git Branching](https://learngitbranching.js.org/). Complete the following sections to level up your Git skills and get closer to working as a team:
 
