@@ -10,7 +10,7 @@
 1. Exercise 2: [More Ajax!](../class/exercise2/README.md)
 
 ## Announcements
-1. Phase 1: Front-end Project ETA Week 9 ([Tentative Outline](../../week9-10_Phase1Project/README.md))
+1. Phase 1: Front-end Project ETA Week 9 ([Tentative Outline](../../../week9-10_Phase1Project/README.md))
 1. [Hacktoberfest](https://hacktoberfest.digitalocean.com) 
 1. No class Saturday Sept 5th 
 
@@ -24,6 +24,7 @@
     * https://anapioficeandfire.com/
 * More RESTful APIs
     * https://github.com/n0shake/Public-APIs
+* [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
 
 ## Homework
 1. Complete class exercises on AJAX.
