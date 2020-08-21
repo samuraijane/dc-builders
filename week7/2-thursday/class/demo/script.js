@@ -13,7 +13,9 @@ button.addEventListener('click', function(e){
         .then(data => {
             var dogPic = document.createElement('img');
             // item.innerHTML = JSON.stringify(data);
-            dogPic.src = data.message
+            // dogPic.src = data.message
+
+            dogPic.setAttribute('src', data.message);
             dataCont.appendChild(dogPic);
             console.log(data);
         });
@@ -21,3 +23,6 @@ button.addEventListener('click', function(e){
     button.innerText = "Generate Doggo";
     }, 300);
   });
+
+
+  //set a promise to prevent button enabling until done
