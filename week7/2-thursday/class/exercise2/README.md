@@ -8,7 +8,7 @@ Step 1:
 
 Step 2:
 
-- Using `axios` or `fetch`, make a GET request to https://dog.ceo/api/breeds/list when the page first loads
+- Using `fetch`, make a GET request to https://dog.ceo/api/breeds/list when the page first loads
 
 - Confirm that this AJAX request shows up in your network tab everytime you reload the page
 
