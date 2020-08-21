@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Exercise 1</title>
+    </head>
+
+    <body>
+        <button id="button">Generate Doggo</button>
+        <div id="doggoCont"></div>
+
+        <script>
+            const button = document.getElementById("button");
+            
+            button.addEventListener("click", function(){
+                button.innerHTML = "Generating Doggo ...";
+                fetch('https://dog.ceo/api/breeds/image/random');
+                .then(response => response.json())
+                .then(date => {
+                    var dataCont = document.getElementById("doggoCont");
+                    var item = document.createElement("img");
+                    console.log(data);
+                })
+            });
+        </script>
+
+    </body>
+</html>
