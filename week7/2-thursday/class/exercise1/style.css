@@ -1,0 +1,8 @@
+input[type=button]{
+    background-color: aqua;
+    border-radius: 10px;
+    margin: center;
+    font-style: bold;
+    font-size: larger;
+    padding: 10%;
+}
