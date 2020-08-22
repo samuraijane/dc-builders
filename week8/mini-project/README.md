@@ -24,13 +24,6 @@ The goal is less about polish and more about finishing, so bugs are OK! This is 
 * [ ] Get started!
 
 ## Teams
-### Team A
-Project: 
-
-[Repo]()
-
-Members
-* 
 
 ### Team B
 Project: 
@@ -38,7 +31,10 @@ Project:
 [Repo]()
 
 Members
-* 
+* Ben V.
+* Heather L.
+* Rudy S.
+* Stacey G.
 
 ### Team C
 Project: 
@@ -46,7 +42,9 @@ Project:
 [Repo]()
 
 Members
-* 
+* Elijah W.
+* John L.
+* Robert P.
 
 ### Team D
 Project: 
@@ -54,5 +52,19 @@ Project:
 [Repo]()
 
 Members
-* 
+* Alexia A.
+* Caitlin C.
+* Daniel G.
+* Lewis R.
+
+### Team E
+Project: 
+
+[Repo]()
+
+Members
+* Ali K. 
+* Christy 
+* Stephan R.
+* Daisy U.
 
