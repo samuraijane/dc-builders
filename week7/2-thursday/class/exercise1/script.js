@@ -1,3 +1,4 @@
+var doggoDiv = document.getElementById("doggo-container");
 var doggoButton = document.getElementById("doggo-button");
 
 doggoButton.addEventListener("click", function(e) {
@@ -9,10 +10,9 @@ doggoButton.addEventListener("click", function(e) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            var doggoDiv = document.getElementById("doggo-container");
             var doggoImg = document.createElement("img");
             doggoDiv.appendChild(doggoImg);
-            doggoImg.src = data.message; //DON'T PUT THIS IN QUOTES
+            doggoImg.src = data.message; 
 
         })
         .then(() => {
@@ -20,3 +20,7 @@ doggoButton.addEventListener("click", function(e) {
             doggoButton.disabled=false;
         })
 });
+
+
+
+
