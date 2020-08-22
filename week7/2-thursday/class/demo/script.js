@@ -10,14 +10,14 @@ button.addEventListener('click', function(e){
     setTimeout(() => {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(response => response.json())
-        .then(data => {
+        .then(dogData => {
             var dogPic = document.createElement('img');
             // item.innerHTML = JSON.stringify(data);
-            // dogPic.src = data.message
+            dogPic.src = dogData.message;
 
-            dogPic.setAttribute('src', data.message);
+            // dogPic.setAttribute('src', dogData.message);
             dataCont.appendChild(dogPic);
-            console.log(data);
+            console.log(dogData);
         });
     button.disabled = false;
     button.innerText = "Generate Doggo";
@@ -26,7 +26,7 @@ button.addEventListener('click', function(e){
 
 
   //set a promise to prevent button enabling until done
-  let form = document.getElementById("formcoookie");
+//   let form = document.getElementById("formcoookie");
 
 
 // form.addEventListener("submit", function(e){
@@ -76,4 +76,4 @@ button.addEventListener('click', function(e){
 //         }, 3000);
 //     });
 //     return promise;
-}
+// }

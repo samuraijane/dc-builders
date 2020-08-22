@@ -1,7 +1,7 @@
 const button = document.getElementById('button');
-const dataCont = document.getElementById('doggie');
+const dogDiv = document.getElementById('doggie');
 
-button.addEventListener('click', function(e){
+button.addEventListener('click', ()=> {
     e.preventDefault();
     button.disabled = true;
     button.innerText = "Generating Doggo...";
@@ -13,10 +13,10 @@ button.addEventListener('click', function(e){
         .then(data => {
             var dogPic = document.createElement('img');
             // item.innerHTML = JSON.stringify(data);
-            // dogPic.src = data.message
-
-            dogPic.setAttribute('src', data.message);
-            dataCont.appendChild(dogPic);
+            dogPic.src = data.message
+            // <img src="data.message"/>
+            // dogPic.setAttribute('src', data.message);
+            dogDiv.appendChild(dogPic);
             console.log(data);
         });
     button.disabled = false;
