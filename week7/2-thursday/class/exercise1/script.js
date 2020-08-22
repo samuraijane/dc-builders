@@ -11,6 +11,8 @@ button.addEventListener("click", function(){
         var doggoIMG = document.createElement('img');
         doggoIMG.src = data.message;
         doggoChamber.appendChild(doggoIMG);
+        button.innerHTML = "Generate Doggo";
     } );
+    
 });
 
