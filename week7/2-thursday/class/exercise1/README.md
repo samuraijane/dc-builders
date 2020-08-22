@@ -18,13 +18,13 @@ Step 2:
 
 Step 3:
 
-- Inside your click listener, make a GET request using axios.get('https://dog.ceo/api/breeds/image/random'); 
+- Inside your click listener, make a GET request using fetch('https://dog.ceo/api/breeds/image/random'); 
 
 - Confirm that a new AJAX request shows up in the Network tab of the developer tools everytime you click on the button
 
 Step 4:
 
-- Chain a `.then(function(data) {})` off of `axios.get(...)` or `fetch(...)`
+- Chain a `.then(function(data) {})` off of `fetch(...)`
 
 - Make sure your callback function takes a parameter called "data"
 

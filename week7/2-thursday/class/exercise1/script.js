@@ -2,13 +2,15 @@ document.getElementById("dog-button").addEventListener("click", function() {
     document.getElementById("dog-button").innerHTML = "Generate Doggo...";
     // console.log("dog-button")
     fetch('https://dog.ceo/api/breeds/image/random')
-        
         .then(function(data) {
 
         })
         .then(data => {
-            
-
+            var dataCont = document.getElementById('dog-data');
+            var image = document.createElement('img');
+            image.src = ('https://dog.ceo/api/breeds/image/random');
+            dataCont.appendChild(image);
+            console.log(data)
         });
 });
 
