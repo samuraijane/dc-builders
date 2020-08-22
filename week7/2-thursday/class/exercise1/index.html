@@ -10,10 +10,20 @@
   </head>
 
   <body>
+    <form>
+        <label for = "breeds"> Choose a breed: </label>
+        <select name="breed" id="breed">
+            <option value="pitbull"> Pitbull</option>
+            <option value="bulldog"> Bulldog </option>
+            <option value="poodle"> Poodle</option>
+            <option value="German Shephard"> German Shephard </option>
+        </select>
+        <br><br>
+        <input type="button" id="button" value="Generate Doggo">
+    </form>
+    
+    <div id="dog_images" >
 
-    <input type="button" id="button" value="Generate Doggo">
-    <div id="images">
-        
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
