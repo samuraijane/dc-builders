@@ -15,6 +15,7 @@
 1. No class Saturday Sept 5th 
 
 ## References
+* [Fetch Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 * RESTful APIs
     * https://gorest.co.in/
     * https://api.nasa.gov/
