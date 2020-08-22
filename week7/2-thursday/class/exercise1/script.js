@@ -3,10 +3,10 @@ document.getElementById("dog-button").addEventListener("click", function() {
     // console.log("dog-button")
     fetch('https://dog.ceo/api/breeds/image/random')
             .then(response => response.json())
-            .then(data => {
-            var dataCont = document.getElementById('dog-data');
+            .then(data => console.log(data) {
+            var dataCont = document.getElementById('dog-image');
             var image = document.createElement('img');
-            image.src = ('https://dog.ceo/api/breeds/image/random');
+            image.src = data.message;
             dataCont.appendChild(image);
             console.log(data)
         });
