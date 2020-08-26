@@ -28,7 +28,7 @@ fetch("https://dog.ceo/api/breeds/list")
         console.log(data);
         var breedsList = data.message;
 
-        function breedPopulator() {
+        function breedPopulator() {    //could use forEach or map method on the breedsList
             for (let i=0; i < 94; i++) {
                 var breedOption = document.createElement("option");
                 breedOption.value = breedsList[i];
@@ -36,6 +36,13 @@ fetch("https://dog.ceo/api/breeds/list")
                 breedSelector.appendChild(breedOption);
                 i++;
             }
+
+        // $dogSelect = $("<select name="dog-breed" id="dog-select"></select>")
+        // breedsList.forEach((breed) => {
+        //     var breedOption = `<option value=${breed}"> ${breed} </option>`;
+        //     $dogSelect.append(breedOption)
+        // })
+        // $("#dog-div").append($dogSelect)
         }
 
         breedPopulator();
