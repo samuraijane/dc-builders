@@ -3,7 +3,7 @@ $ (() => {
 
 
 fetch('https://dog.ceo/api/breeds/list/all')
-    .then(respone => response.json())
+    .then(response => response.json())
     .then(data => {
 
         var $dogSelect = $(`<select name="dog-breed" id="dog-select"></select>`)
@@ -14,7 +14,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
             console.logo("In loop:" + breed);
             var breedOption =`<option value="${breed}">${breed}</option>`
             $dogSelect.append(breedOption);
-        })
+        });
 
         $('#dog-div').empty();
         $('#dog-div').append($dogSelect)
@@ -25,8 +25,13 @@ fetch('https://dog.ceo/api/breeds/list/all')
 
 
         fetch(`https://dog.ceo/api/breed/${dogSelect.val()}/images/random`)
-            .then(respone => response.json())
-            .then(data => {});
+            .then(response => response.json())
+            .then(data => {
+
+                var dogImage = $(`<img src="${data.message}>"`)
+                $('#dog-div').append($dogSelect)
+                console.log('Fetch 2:' + data);
+            });
 
         });
 
