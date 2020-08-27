@@ -6,6 +6,8 @@
 1. Live Demo: Var vs. Let vs. Const
 1. Live Demo: More Promises and Async/Await
 1. Exercise 1: [Scene-it! Part III](../../../week7/3-saturday/class/exercise1/README.md)
+    1. New API Key: `8534d2a7`
+    1. If you get an error that says limit exceeded, let Dan know.
 1. Exercise 2: [Promise Exercises](../class/exercise2/README.md)
 
 ## Announcements
