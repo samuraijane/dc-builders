@@ -1,0 +1,26 @@
+body {
+    background-color: #1e591b;
+    background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+    color: aliceblue;
+    text-align: center;
+}
+.page-banner {
+    font-style: italic;
+    font-size: 124px;
+}
+
+.btn {
+    height: 100px;
+    width: 200px;
+    font-size: 48px;
+}
+
+.dans-card img{
+    width: 200px;
+}
+
+.card-table {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

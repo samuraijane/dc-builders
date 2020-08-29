@@ -1,4 +1,4 @@
-# Week 7/8 Mini-Project: Interactive Games with JQuery
+# ~~Week 7/8 Mini-Project: Interactive Games with JQuery~~ Suspended
 
 ## Objective
 
@@ -16,9 +16,9 @@ The goal is less about polish and more about finishing, so bugs are OK! This is 
 * Host on Github Pages
 
 ## Project Steps
-* [ ] Decide on a team name
-* [ ] Decide on a Game with your teammates
-* [ ] Get sign off from Dan/JB (to make sure )
+* [X] Decide on a team name
+* [X] Decide on a Game with your teammates
+* [ ] Get sign off from Dan/JB (to make sure it's achieveable)
 * [ ] Setup Github Repo using Gitflow
 * [ ] Setup Github Projects Board
 * [ ] Get started!
