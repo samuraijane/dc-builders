@@ -20,40 +20,60 @@ let urls = [
 
 retrieveDoggoUrl(urls);
 
-// PART 2: Promise.all()
+// could use async await to make more simple
+
+// async function getUrls() {
+//  let data = await fetch(urls[0]);
+//  console.log("#1 data was fetched");
+//  data = await fetch(urls[1]);
+//  console.log("#2 data was fetched"); 
+//  ...  
+// }
+//  getUrls();
+
+// PART 2: Promise.all() --> when a bunch of Promises return together, wait until all are resolved or at least one is rejected
 
   
 const retrieveDoggosFromAPI = (doggoUrls) => {
-    const fetchArray = doggoUrls.map(url => 
+    const fetchArray = doggoUrls.map((url, idx) => {
         fetch(url)
         .then(response => response.json())
-    );
+        .then(() => console.log(`Data #: ${idx}`))
+    });
 
     return Promise.all(fetchArray);
   };
 
 
-console.log(`The data we got from the server was ${retrieveDoggosFromAPI(urls)}`);
+retrieveDoggosFromAPI(urls);
 
 // PART 3: Resolve Reject
 
-const addNumbers = ((x,y) => {
+let addNumbers = ((x,y) => {
     return new Promise((res, rej) => {
         if (isNaN(x) || isNaN(y)) {
-            rej();
+            rej("One or both of the parameters is not a number");
         }
         else {
-            res();  
+            res(x+y);  
         }
-    })
-    .then(() => {
-        let sum = x + y;
-        console.log(sum);
-    })
-    .catch(() => {
-        console.error(`Error, one or both of the parameters is not a number`);
     })
 })
 
-addNumbers(1, 2);
-addNumbers("t", 3);
+//test cases
+
+addNumbers(1, 2)
+    .then((answer) => {
+        console.log(answer);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
+
+addNumbers("t", 3)
+    .then((answer) => {
+        console.log(answer);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
