@@ -36,7 +36,7 @@ let promiseArray = urls.map((url, indx) => {
 Promise.all(promiseArray).then(() => console.log ('All done'));
 
 
-//Add numbers
+//Add numbers reject if not numbers
 
    let addNumbers = (x , y) => {
         return new Promise((resolve, reject) => {
