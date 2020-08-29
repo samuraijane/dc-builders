@@ -1,31 +1,39 @@
-$(function(){
+$(() => {
+//console.log("Ready");
 
-	function renderMovies(movieArray) {
+    function renderMovie(movieArray) {
+            
+            var movieHTML = movieArray.map(movie => {
 
-		var finalHTML = "";
+                return`<div class="card movie" style="width: 15rem;"> 
+                        <img class="card-img-top" src="${movie.Poster}"/> 
+                        <div class="card-body">
+                            <h5 class="card-title movie-title">${movie.Title}</h5> 
+                            <p class="card-text movie-release-date">${movie.Year}</p>
+                            <a href="#" onclick="saveToWatchlist('${movie.imdbID}')" class="btn btn-primary">Add</a>
+                         </div>
+                    </div>`
 
-		movieArray.forEach(function(currentMovie){
+            });
 
-			finalHTML += '<div class="card" style="width: 20rem;">';
-			finalHTML += '<img class="card-img-top" src="'+ currentMovie.Poster +'"/>';
-			finalHTML += '<div class="card-body">';
-			finalHTML += '<h4 class="card-title">'+ currentMovie.Title;
-			finalHTML += '<span class="badge badge-secondary float-right">'+ currentMovie.Year +'</span>';
-			finalHTML += '</h4>';
-			finalHTML += '<a href="#" class="btn btn-primary addButton">Add!</a>';
-			finalHTML += '</div>';
-			finalHTML += '</div>';
-		});
+        $(".results").html(movieHTML.join(" "));
+        
+        $(".movies-container").append(movieHTML);
 
-		return finalHTML;
-	}
+    }
 
-	$('form').submit(function(e){
-		e.preventDefault();
-		var movieHTML = renderMovies(movieData);
-		$('.movie-container').html(movieHTML);
-	});
+    $("#search-form").submit(function(e){
+        e.preventDefault();
+        $(".movies-container").empty();
+        renderMovie(movieData);
+    })
 
+});
 
+function saveToWatchlist(imdbID) {
+    console.log("Add button works!");
+    var movie = movieData.find((currentMovie) => {
+      return currentMovie.imdbID == imdbID;
+    });
 
-})
+}

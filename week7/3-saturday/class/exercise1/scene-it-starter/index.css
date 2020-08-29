@@ -18,6 +18,8 @@ body {
 	margin: .25em !important;
 }
 
-.m-auto {
-	margin: auto !important;
+.movies-container {
+	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
 }
