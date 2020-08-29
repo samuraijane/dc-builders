@@ -15,6 +15,7 @@
 1. No class Saturday Sept 5th 
 
 ## References
+* [Dan's Scene-it Review for Part I, Step 2](https://github.com/DanStough/scene-it-starter)
 * [Playing Card Images](https://github.com/hayeah/playing-cards-assets)
 * [JQuery Flip Plugin](https://nnattawat.github.io/flip/)
 * [Fetch Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
@@ -30,7 +31,7 @@
 * [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
 
 ## Homework
-1. Complete [Scene-it!](../class/exercise1/README.md)
-1. [Mini-project](../../../week8/mini-project/README.md)
-    1. Start discussing the division of work. Be ready to work in class on Tuesday. Feel free to also get a head start.
+1. Complete [Scene-it! Part I](../class/exercise1/README.md)
+1. ~~[Mini-project](../../../week8/mini-project/README.md)~~
+    ~~1. Start discussing the division of work. Be ready to work in class on Tuesday. Feel free to also get a head start.~~
 1. Review [Promises](https://learn.digitalcrafts.com/flex/lessons/building-interactive-uis/intro-to-promises/#learning-objectives) for next class in the learning portal.
