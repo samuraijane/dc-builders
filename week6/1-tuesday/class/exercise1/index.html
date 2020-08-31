@@ -5,11 +5,29 @@
     <meta charset="utf-8">
     <title>Week6 – Tuesday Class Exercise 1</title>
     <meta name="description" content="Week6 – Tuesday Class Exercise 1">
-    <meta name="author" content="<yourNameGoesHere>">
+    <meta name="author" content="Lewis">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <form>
+      <fieldset>
+        <legend>Contact Entry</legend>
+          <p>
+            <label for="first-name">First Name</label>
+            <input type=text id="first-name" value="first-name" />
+          </p>
+          <p>
+            <label for="last-name"> Last Name</label>
+            <input type=text id="last-name" value="last-name"/>
+          </p>
+          <p>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          </p>
+          <input type="submit" value="Submit">
+      </fieldset>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
