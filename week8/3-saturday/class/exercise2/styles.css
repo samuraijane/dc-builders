@@ -1,0 +1,41 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+.title {
+    text-align: center;
+}
+
+#fight-ring, #attack-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 200px 0 200px;
+}
+
+.hero-card, .hero-attack {
+    background-color: lightseagreen;
+    border: 5px solid black;
+    text-align: center;
+    position: relative;
+}
+
+.villian-card, .villian-attack {
+    background-color: salmon;
+    border: 5px solid black;
+    text-align: center;
+    position: relative;
+}
+
+.red-x {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
