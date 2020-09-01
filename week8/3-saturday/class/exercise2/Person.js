@@ -3,6 +3,11 @@ class Person {
         this.name = name
         this.health = 100
         this.weapon = null
+        console.log(this.name)
+    }
+
+    person() {
+        console.log(this.name)
     }
 
     equipWeapon(weapon) {
@@ -10,9 +15,8 @@ class Person {
     }
     attack(person) {
         person = this.health - this.weapon
+        console.log(person)
     }
 };
 
 rob = new Person('Rob');
-
-console.log(rob);
