@@ -8,7 +8,6 @@ class Person {
         this.weapon = weapon;
     }
     attack(person){
-        console.log("attack!");
         person.health = person.health - this.weapon.damage;
     }
 }
