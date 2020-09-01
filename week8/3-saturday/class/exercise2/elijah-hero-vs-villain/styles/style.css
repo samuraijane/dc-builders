@@ -1,0 +1,13 @@
+img {
+    width: 500px;
+}
+
+.character {
+    max width: 300;
+    display: inline;
+    border: 5px solid green;
+}
+
+#battle-container {
+    border: 2px solid black;
+}
