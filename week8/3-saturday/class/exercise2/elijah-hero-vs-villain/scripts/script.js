@@ -15,7 +15,7 @@ function attackHero() {
     lowerLife = heroLife.innerHTML - attackHeroWeapon.damage;
     heroLife.innerHTML = lowerLife;
     if (heroLife.innerHTML < 1) {
-        alert("Villain wins!")
+        alert(`${villainName} wins!`)
     }
 }
 
@@ -27,6 +27,6 @@ function attackVillain() {
     lowerLife = villainLife.innerHTML - attackVillainWeapon.damage;
     villainLife.innerHTML = lowerLife;
     if (villainLife.innerHTML < 1) {
-        alert("Hero wins!")
+        alert(`${heroName} wins!`)
     }
 }
