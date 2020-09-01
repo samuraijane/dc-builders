@@ -19,12 +19,13 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <div id="formsubmitbutton">
       <form id="formElem" >
         <div class="hero"> 
           <p>PICK YOUR HERO!</p>
             <input type="text" id="heroName" placeholder="Hero's Name">
-            <label for="weaponChoice">Choose a weapon:</label>
-              <select id="weaponChoice" name="weaponChoice">
+            <label for="weaponChoiceH">Choose a weapon:</label>
+              <select id="weaponChoiceH" name="weaponChoice">
                 <option value="Sai">Sai</option>
                 <option value="Staff">Staff</option>
                 <option value="Nunchaku">Nunchaku</option>
@@ -34,23 +35,25 @@
         <div class="villian">
           <p>PICK YOUR VILLIAN!</p>
             <input type="text" id="villianName" placeholder="Hero's Name">
-            <label for="weaponChoice">Choose a weapon:</label>
-              <select id="weaponChoice" name="weaponChoice">
+            <label for="weaponChoiceV">Choose a weapon:</label>
+              <select id="weaponChoiceV" name="weaponChoice">
                 <option value="Sai">Sai</option>
                 <option value="Staff">Staff</option>
                 <option value="Nunchaku">Nunchaku</option>
                 <option value="Katana">Katana</option>
               </select>
         </div>
-      </form> 
-      <div id="formsubmitbutton">
         <input type="submit" name="submitter" value="Submit Button" onclick="ButtonClicked()">
+      </form> 
       </div>
       <div id="buttonreplacement" style="margin-left:30px; display:none;">
-        <h1>YOUR HERO</h1>
+        <h2>YOUR HERO</h2>
         <img src="img/sVen.jpg" alt="loading...">
-        <h1>YOUR VILLIAN</h1>
+        <p>Weapon Choice:</p>
+        <h1>VS.</h1>
+        <h2>YOUR VILLIAN</h2>
         <img src="img/dragon-legendary-creature-sea-serpent-art-creatures-png-clip-art.png" alt="loading...">
+        <p>Weapon Choice:</p>
       </div>
         
         
