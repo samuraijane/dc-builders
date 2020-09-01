@@ -7,6 +7,6 @@ window.addEventListener("load", function() {
     newVillain.render(villainName);
     attackVillain = document.getElementById("attack-the-villain");
     attackHero = document.getElementById("attack-the-hero");
-    attackVillain.addEventListener("click", );
-    attackHero.addEventListener("click", );
+    // attackVillain.addEventListener("click", );
+    // attackHero.addEventListener("click", );
 })
