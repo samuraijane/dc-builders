@@ -4,16 +4,14 @@ $(() => {
 
     let hero = new Hero(heroName);
     let villain = new Villain(villainName);
-    let weaponOne = new Weapon;
-    let weaponTwo = new Weapon;
-    
-    weaponOne.name = "Sword of Truth";
-    weaponTwo.name = "Battleaxe of Shadows";
+    let weaponOne = new Weapon("Sword of Truth");
+    let weaponTwo = new Weapon("Battleaxe of Shadows");
 
     $(".people").append(hero.render());
-    $(".hero").append(`<p>${hero.name}</p><p class="hero-health">Health: ${hero.health}</p><button class="attack-villain">Attack Villain</button>`)
+    $(".hero").append(`<p>${hero.name}</p><p class="hero-health">Health: ${hero.health}</p><button class="attack-villain">Attack Villain</button>`);
     $(".people").append(villain.render());
-    $(".villain").append(`<p>${villain.name}</p><p class="villain-health">Health: ${villain.health}</p><button class="attack-hero">Attack Hero</button>`)
+    $(".villain").append(`<p>${villain.name}</p><p class="villain-health">Health: ${villain.health}</p><button class="attack-hero">Attack Hero</button>`);
+
     hero.equipWeapon(weaponOne);
     villain.equipWeapon(weaponTwo);
 
