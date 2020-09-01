@@ -2,9 +2,8 @@ class Hero extends Person{
     constructor(inputName) {
         super(inputName);
     }
-    render() {
-
+    render(heroName) {
+        let heroHTML = `<h2 class="player-name" id="hero-name">The Hero: ${heroName}</h2><img src="https://fromthebalcony.com/wp-content/uploads/2014/01/Hero_anexdu.jpg"><button class="attack" id="attack-the-hero">Attack the Hero!</button><h3>Life Remaining:</h3><p class="life" id="hero-life">100</p>`
+        document.getElementById("hero-container").innerHTML = heroHTML;
     }
 }
-
-// https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/2002/B00742BVW8_Hero._V142683513_SX1080_.jpg

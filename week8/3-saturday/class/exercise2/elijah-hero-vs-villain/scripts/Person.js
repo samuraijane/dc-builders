@@ -8,6 +8,6 @@ class Person {
         this.weapon = weapon;
     }
     attack(person) {
-        this.health -= this.weapon;
+        person.health -= this.weapon;
     }
 }

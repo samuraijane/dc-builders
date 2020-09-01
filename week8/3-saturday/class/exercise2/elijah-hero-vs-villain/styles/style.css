@@ -4,10 +4,39 @@ img {
 
 .character {
     max width: 300;
-    display: inline;
+    display: block;
     border: 5px solid green;
 }
 
+#villain-container {
+    float: right;
+}
+
+#hero-container {
+    float: left;
+}
+
 #battle-container {
-    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+p.life {
+    text-align: center;
+    font-size: 3em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: red;
+    font-size: 2em;
 }
