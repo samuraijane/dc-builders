@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+}
+
+.people img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    clear: both;
+}
+
+.hero {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.hero button {
+    clear: left;
+    margin-left: 50px;
+}
+
+.hero p {
+    clear: left;
+    margin-left: 50px;
+    overflow: auto;
+    display: block;
+}
+
+.villain {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.villain button {
+    clear: left;
+    margin-left: 50px;
+}
+
+.villain p {
+    clear: left;
+    margin-left: 50px;
+    overflow: auto;
+    display: block;
+}
