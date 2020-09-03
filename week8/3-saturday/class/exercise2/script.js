@@ -14,10 +14,10 @@ $(()=> {
         // v = new Villian(villianNamePull);
         // v.villianIntro();
         //Pass thorugh wepaon class
-        let weaponH = $('#weaponChoiceH option:selected' ).text();
+        let weaponH = $('#weaponChoiceH option:selected').text();
         console.log(weaponH);
         w1 = new Weapon(weaponH);
-        let weaponV = $('#weaponChoiceV option:selected' ).text();
+        let weaponV = $('#weaponChoiceV option:selected').text();
         console.log(weaponV);
         w2 = new Weapon(weaponV);
         });
@@ -30,11 +30,11 @@ $(()=> {
         $('#buttonreplacement').append(
             `<h2>YOUR HERO</h2>
             <img src="img/sVen.jpg" alt="loading...">
-            <p>Weapon Choice:""</p>
+            <p>Weapon Choice: ${$('#weaponChoiceH option:selected').text()}</p>
             <h1>VS.</h1>
             <h2>YOUR VILLIAN</h2>
             <img src="img/dragon-legendary-creature-sea-serpent-art-creatures-png-clip-art.png" alt="loading...">
-            <p>Weapon Choice:""</p>)`)
+            <p>Weapon Choice: ${$('#weaponChoiceV option:selected').text()}</p>`)
 
     };
 
