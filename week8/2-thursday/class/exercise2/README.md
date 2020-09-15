@@ -4,6 +4,7 @@
 
 Given an array of urls:
 
+```javascript
 var urls = [
   'https://dog.ceo/api/breed/beagle/images/random',
   'https://dog.ceo/api/breed/chow/images/random',
@@ -11,7 +12,9 @@ var urls = [
   'https://dog.ceo/api/breed/dingo/images/random',
   'https://dog.ceo/api/breed/eskimo/images/random'
 ];
-Use fetch.get() and a chain of .then() calls to fetch these URLs one by one. After each .get() is done, console log "data was fetched!". You should see 5 separate log statements staggered in time.
+```
+
+Use fetch() and a chain of .then() calls to fetch these URLs one by one. After each fetch is done, console log "data was fetched!". You should see 5 separate log statements staggered in time.
 
 ## Part 2 - Promise.all()
 
