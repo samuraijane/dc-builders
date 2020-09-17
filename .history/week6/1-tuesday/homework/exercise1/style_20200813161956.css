@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+}
+
+.column {
+   flex: 20%;
+   padding:10px;
+   /* height: 300px; */
+}

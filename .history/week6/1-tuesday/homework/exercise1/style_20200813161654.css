@@ -1,0 +1,8 @@
+.rowlabel {
+    min-width: 120px;
+}
+
+p {
+   display: flex;
+   flex-direction: column;
+}

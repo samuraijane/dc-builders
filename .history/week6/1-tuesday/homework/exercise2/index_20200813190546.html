@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Week6 – Tuesday Homework Exercise 2</title>
+    <meta name="description" content="Week6 – Tuesday Homework Exercise 2">
+    <meta name="author" content="<yourNameGoesHere>">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+   <form onsubmit="alert('hello')">
+    <fieldset>
+      <legend>Contact Us</legend>
+      <p>
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" required
+                minlength="4" maxlength="10" size="12">
+      </p>
+      <p>
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <label for="language-select"> What is your preferred language </label>
+      <select name="language" id="language-select">
+        <option value="" disabled selected>--Please choose your preferred language:--</option>
+        <option value="action">English</option>
+        <option value="adventure">Spanish</option>
+        <option value="comedy">French</option>
+        <label for="additional-input"> Please provide additional details: </label>
+        <p>
+          <textarea id="additional-input" name="additional-input">
+        Additional comment ...
+          </textarea>
+        </p>
+    </fieldset>
+
+    <input type="submit" value></submit>
+  </form> 
+    <script src="script.js"></script>
+  </body>
+</html>
