@@ -11,6 +11,8 @@
 1. No class Saturday Sept 5th 
 
 ## References
+* Good place to practice JavaScript: [CodeSignal "Arcade Mode"](https://app.codesignal.com/arcade)
+* Learn the command line text editor VIM: [VIM Adventure](https://vim-adventures.com/) 
 * [Dan's Scene-it Review for Part I, Step 2](https://github.com/DanStough/scene-it-starter)
 * [Scene-It Part 1 Solution](https://github.com/adamszaruga/scene-it-part-1-solution)
 * [Fetch Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
@@ -25,5 +27,5 @@
     * https://github.com/n0shake/Public-APIs
 
 ## Homework
-1. Complete [Scene-it! Part II,III](../class/exercise1/README.md)
+1. Complete [Scene-it! Part II](../class/exercise1/README.md)
 1. Review [Github Hosting](https://learn.digitalcrafts.com/flex/lessons/front-end-foundations/github-pages-hosting/) for next class in the learning portal.
