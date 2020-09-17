@@ -1,0 +1,7 @@
+p {
+  display: flex;
+}
+
+label {
+  width: 250px;
+}
