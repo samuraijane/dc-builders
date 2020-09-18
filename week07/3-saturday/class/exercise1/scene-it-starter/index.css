@@ -1,0 +1,25 @@
+body {
+	background-color: #B2E9FD;
+}
+
+.header h2 {
+	color: #DC4247;
+}
+
+.header p {
+	color: #50524F;
+}
+
+.results {
+	margin-top: 20px;
+}
+
+.m-1 {
+	margin: .25em !important;
+}
+
+.movies-container {
+	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+}

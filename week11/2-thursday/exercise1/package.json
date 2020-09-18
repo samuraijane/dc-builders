@@ -1,0 +1,19 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Thursday's class exercises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraijane/dc-builders.git"
+  },
+  "author": "A. Kasper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuraijane/dc-builders/issues"
+  },
+  "homepage": "https://github.com/samuraijane/dc-builders#readme"
+}
