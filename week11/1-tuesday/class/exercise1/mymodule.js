@@ -6,10 +6,9 @@ module.exports = (dir, extension, callback) => {
         if(err){
             return callback(err);
         }
-        list.forEach(file => {
-            if(path.extname(file) === extension) {
-                return console.log(file);
-            }
+        filterlist = list.forEach(file => {
+            return path.extname(file) === extension;
         });
-    });
+        callback(null, filterlist);
+    })
 }
