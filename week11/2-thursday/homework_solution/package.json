@@ -1,0 +1,16 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "A calculator package",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --reporter nyan __test__/**/*.spec.js"
+  },
+  "author": "jduv",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.2"
+  }
+}

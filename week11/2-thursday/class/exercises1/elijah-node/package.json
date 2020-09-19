@@ -1,0 +1,17 @@
+{
+  "name": "elijah-node",
+  "version": "1.0.0",
+  "description": "Some random stuff for class",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "speed": "speed-test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elijah",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "speed-test": "^2.1.0"
+  }
+}
