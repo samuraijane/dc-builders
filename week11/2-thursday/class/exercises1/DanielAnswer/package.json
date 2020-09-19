@@ -1,0 +1,17 @@
+{
+  "name": "danielanswer",
+  "version": "1.0.0",
+  "description": "My answers for exercise 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Daniel",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "npm": "^6.14.8",
+    "speed-test": "^2.1.0"
+  }
+}

@@ -1,3 +1,4 @@
+function log2(){
 console.log('This is a console.log() statement in file2.js');
-
-module.exports = "";
+}
+module.exports = {log2};
