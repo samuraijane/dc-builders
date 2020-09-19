@@ -9,6 +9,7 @@
   "author": "Stacey Graham",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "robotjs": "^0.6.0"
   }
 }
