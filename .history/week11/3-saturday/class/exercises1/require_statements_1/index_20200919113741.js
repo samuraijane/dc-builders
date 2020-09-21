@@ -1,0 +1,4 @@
+const file1 = require("./file1");
+const file1 = require("./file1");
+const file1 = require("./file1");
+console
