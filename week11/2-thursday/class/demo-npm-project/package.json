@@ -9,7 +9,11 @@
     "argv-test": "node index.js 1 2 3 4 5",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "author": "J. Loftin",
+=======
+  "author": "D. Stough",
+>>>>>>> master
   "license": "MIT",
   "dependencies": {
     "cat-names": "^3.0.0",

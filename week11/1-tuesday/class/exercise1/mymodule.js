@@ -10,5 +10,5 @@ module.exports = (dir, extension, callback) => {
             return path.extname(file) === extension;
         });
         callback(null, filterlist);
-    })
+    }) 
 }
