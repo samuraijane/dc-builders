@@ -12,6 +12,7 @@ class Strings {
     // Shifts every letter forward by one. Z goes
     // to A (wraps around)
     shift(toShift) {
+        
     }
 
     // Checks to see if the target string is a number
