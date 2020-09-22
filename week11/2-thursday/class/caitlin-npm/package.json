@@ -1,0 +1,28 @@
+{
+  "name": "caitlin-npm",
+  "version": "1.0.0",
+  "description": "This is my class npm demo project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "standard --fix",
+    "speed": "speed-test --save",
+    "argv-test": "node index.js 1 2 3 4 5",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C. Crawford",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cat-facts": "^1.0.2",
+    "cat-names": "^3.0.0",
+    "cowsay": "^1.4.0",
+    "download": "^8.0.0",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.20",
+    "pdfkit": "^0.11.0",
+    "robotjs": "^0.6.0",
+    "speed-test": "^2.1.0",
+    "standard": "^14.3.4"
+  }
+}
