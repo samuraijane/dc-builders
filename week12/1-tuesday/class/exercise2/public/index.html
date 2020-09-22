@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Rendering</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="renderRectangle.js"></script>
+    <script src="renderCircles.js"></script>
+    <script src="renderNametags.js"></script>
+    <script src="renderStudents.js"></script>
+    <script src="renderPokerHand.js"></script>
+    <script src="renderRestaurants.js"></script>
+    <script src="renderMovies.js"></script>
+    <script src="renderTweets.js"></script>
+    <script src="renderAlbums.js"></script>
+    <script src="renderSurveys.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-around">
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="rectangle()">Render Rectangle</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="circles()">Render Circles</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="nametags()">Render Name Tags</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="students()">Render Students</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="pokerHand()">Render Poker Hand</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="restaurants()">Render Restaurants</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="movies()">Render Movies</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="tweets()">Render Tweets</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="albums()">Render Albums</button>
+            <button type="button" class="btn btn-primary render-button mt-1" onclick="surveys()">Render Surveys</button>
+        </div>
+        <div id="content">
+            <div class="text-center mt-5">
+                <h1>Click the buttons to see your render functions at work!</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
