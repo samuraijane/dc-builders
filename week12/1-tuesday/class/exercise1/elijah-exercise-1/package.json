@@ -1,0 +1,19 @@
+{
+  "name": "elijah-exercise-1",
+  "version": "1.0.0",
+  "description": "Exercise1",
+  "main": "index.js",
+  "scripts": {
+    "ping": "node pingpong.js",
+    "count": "node counting.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elijah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
