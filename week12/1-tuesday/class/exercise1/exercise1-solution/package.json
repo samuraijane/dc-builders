@@ -1,0 +1,21 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Ping Pong and Counting Server",
+  "main": "index.js",
+  "scripts": {
+    "start-pong": "node index.js",
+    "start-count": "node count.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-pong": "nodemon index.js",
+    "dev-count": "nodemon count.js"
+  },
+  "author": "Daniel Gallagher",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
