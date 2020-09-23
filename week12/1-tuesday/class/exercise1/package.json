@@ -2,9 +2,9 @@
   "name": "server-exercise",
   "version": "1.0.0",
   "description": "server-exercise",
-  "main": "app.js",
+  "main": "ping-pong.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ping-pong.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
