@@ -11,6 +11,7 @@
 
 ## References
 1. [`Introduction to Express.js` on the Learning Portal](https://learn.digitalcrafts.com/flex/lessons/back-end-foundations/express-101/#learning-objectives)
+1. [MDN Notes on HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
 ## Homework
 1. Complete Exercise 2: [Rendering API](../class/exercise2/README.md)
