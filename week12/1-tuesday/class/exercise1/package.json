@@ -1,0 +1,20 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Solution to Exercise 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pingpong" : "node pingpong.js",
+    "counting" : "node counting.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C. Crawford",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

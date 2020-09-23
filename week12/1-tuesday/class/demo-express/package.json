@@ -1,0 +1,19 @@
+{
+  "name": "demo-express",
+  "version": "1.0.0",
+  "description": "My first server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js 3000",
+    "dev": "nodemon app.js 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C. Crawford",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
