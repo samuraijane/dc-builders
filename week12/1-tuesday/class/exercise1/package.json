@@ -1,0 +1,19 @@
+{
+  "name": "server-exercise",
+  "version": "1.0.0",
+  "description": "server-exercise",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dc-builders"
+  },
+  "author": "S. Graham",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
