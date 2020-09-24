@@ -1,0 +1,14 @@
+{
+  "name": "server-solution",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "ping": "node ping.js",
+    "count": "node counter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
