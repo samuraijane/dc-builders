@@ -1,0 +1,24 @@
+{
+  "name": "demo-express",
+  "version": "1.0.0",
+  "description": "My first web server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webserver",
+    "awesome",
+    "express"
+  ],
+  "author": "J. Loftin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
