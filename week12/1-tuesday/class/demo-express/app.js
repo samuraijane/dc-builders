@@ -1,30 +1,28 @@
-
-const port = process.argv[2] || 3000; //specify a default if don't state
-
+//order matters when doing your requests...routing and handlers which are the anoymous functions inside the requests. Most specific go first. 
 
 const express = require('express')
 const app = express()
 
-//order matters when doing your requests...routing and handlers which are the anoymous functions inside the requests. Most specific go first. 
+const port = process.argv[2] || 3000 //specify a default if don't state
 
-app.get('/todo', function (req, res) {
-    res.send('My Todo List')
-  })
+let count = 0;
 
-app.post('/todo', function (req, res) {
-    console.log("I'm a server, and I got a new request for a list.");
-    res.send('Request received.');
+app.get('/todos', function (req, res) {
+    res.send('TODO List')
 })
 
-app.get('/', function (req, res) {  //one slash is just the root or homepage
-  res.send('Hello Digital Crafts')
+app.post('/todos', function (req, res) {
+    console.log("I'm a server, and I got a new request for a list.")
+    count += 1
+    // res.send(`${count} requests received`)
+    res.send(200)
 })
 
-app.get('*', function (req, res) {    //star means happen for anything as long as not specified above ----> be careful with this
+app.get('*', function (req, res) {
     res.send('Hello World')
-  })
+})
 
- 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(port, ()=>{
+    console.log(`Server is running on port ${port}`)
+
 })
