@@ -13,7 +13,11 @@
     "awesome",
     "express"
   ],
+<<<<<<< HEAD
   "author": "J. Loftin",
+=======
+  "author": "D. Stough",
+>>>>>>> master
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
