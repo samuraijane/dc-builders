@@ -1,0 +1,14 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "week 12, tuesday, exercise 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "A. Kasper",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
