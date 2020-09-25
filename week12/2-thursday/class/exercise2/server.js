@@ -46,6 +46,9 @@ app.get("/api/owners/:id", function (req, res) {
     res.send(JSON.stringify(owners/:id));
 });
 // POST /api/owners
+app.post("/api/owners", function (req, res) {
+    res.send(JSON.stringify(owners));
+  });
 
 // PUT /api/owners/:id
 
