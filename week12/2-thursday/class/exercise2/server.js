@@ -43,10 +43,7 @@ app.get("/api/owners", function (req, res) {
 // GET /api/owners/:id
 app.get("/api/owners/:id", function (req, res) {
     owners.find()
-
-
-
-  res.send(JSON.stringify(owners/:id));
+    res.send(JSON.stringify(owners/:id));
 });
 // POST /api/owners
 
