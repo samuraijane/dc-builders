@@ -1,45 +1,53 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+var express = require("express");
+var bodyParser = require("body-parser");
 
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 var owners = [
-    {
+  {
+    id: 1,
+    name: "Adam",
+    pets: [
+      {
         id: 1,
-        name: "Adam",
-        pets: [
-            {
-                id: 1,
-                name: "Vera",
-                type: "Dog"
-            },
-            {
-                id: 2,
-                name: "Felix",
-                type: "Cat"
-            }
-        ]
-    },
-    {
+        name: "Vera",
+        type: "Dog",
+      },
+      {
         id: 2,
-        name: "Kamilah",
-        pets: [
-            {
-                id: 1,
-                name: "Doug",
-                type: "Dog"
-            }
-        ]
-    }
+        name: "Felix",
+        type: "Cat",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Kamilah",
+    pets: [
+      {
+        id: 1,
+        name: "Doug",
+        type: "Dog",
+      },
+    ],
+  },
 ];
 
-
 // GET /api/owners
+app.get("/api/owners", function (req, res) {
+  res.send(JSON.stringify(owners));
+});
 
 // GET /api/owners/:id
+app.get("/api/owners/:id", function (req, res) {
+    owners.find()
 
+
+
+  res.send(JSON.stringify(owners/:id));
+});
 // POST /api/owners
 
 // PUT /api/owners/:id
@@ -56,7 +64,6 @@ var owners = [
 
 // DELETE /api/owners/:id/pets/:petId
 
-
-app.listen(3000, function(){
-    console.log('Pets API is now listening on port 3000...');
-})
+app.listen(3000, function () {
+  console.log("Pets API is now listening on port 3000...");
+});
