@@ -1,0 +1,19 @@
+{
+  "name": "elijah-exercise-1",
+  "version": "1.0.0",
+  "description": "Exercise1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon count.js",
+    "start": "node counter.js"
+  },
+  "author": "Elijah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
