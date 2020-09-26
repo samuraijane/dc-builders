@@ -36,7 +36,6 @@ app.get('/api/todos/:id', (req, res) => {
 app.post('/api/todos', (req, res) => {
     let newItem = req.body;
     newItem["id"] = autoIncrement++;
-
     todoList.push(req.body)
 })
 // PUT /api/todos/:id.
