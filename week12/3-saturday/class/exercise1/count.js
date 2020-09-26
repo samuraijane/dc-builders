@@ -6,16 +6,16 @@ app.use(express.static(__dirname + "/public"))
 
 app.post('/api/increment', function (req, res) {
     theCount++;
-    res.send(`The current count is ${theCount}, ha ha ha.`)
+    res.send(`${theCount}`)
 })
 
 app.post('/api/decrement', function (req, res) {
     theCount--;
-    res.send(`The current count is ${theCount}, ha ha ha.`)
+    res.send(`${theCount}`)
 })
 
 app.get('/api/value', function (req, res) {
-  res.send(`The current count is ${theCount}, ha ha ha.`)
+  res.send(`${theCount}`)
 })
 
 app.get('/api', function (req, res) {
