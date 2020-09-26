@@ -42,13 +42,18 @@ app.get("/api/owners", function (req, res) {
 
 // GET /api/owners/:id
 app.get("/api/owners/:id", function (req, res) {
-    owners.find()
-    res.send(JSON.stringify(owners/:id));
-});
-// POST /api/owners
-app.post("/api/owners", function (req, res) {
-    res.send(JSON.stringify(owners));
+  let myOwner = owners.find((indvOwner) => {
+    console.log(indvOwner);
+    return req.params.id == indvOwner.id;
   });
+  if (myOwner) {
+    res.send(myOwner);
+  } else {
+    res.status(404).send("owner not found");
+  }
+});
+
+// POST /api/owners
 
 // PUT /api/owners/:id
 
