@@ -1,23 +1,18 @@
 {
-  "name": "pets-api",
+  "name": "exercise2",
   "version": "1.0.0",
-  "description": "",
+  "description": "You job is to implement the Pet Shop API documented in the comments of `server.js` and test with either Postman or a command line tool.",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adamszaruga/pets-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/adamszaruga/pets-api/issues"
-  },
-  "homepage": "https://github.com/adamszaruga/pets-api#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "S. Graham",
+  "license": "ISC"
 }

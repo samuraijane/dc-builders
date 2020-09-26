@@ -37,14 +37,32 @@ var owners = [
 
 
 // GET /api/owners
+app.get('/api/owners', (req, res) => {
+    res.send(owners)
+})
 
 // GET /api/owners/:id
-
+app.get('/api/owners/:id', (req, res) => {
+    console.log(req.params.id)
+    res.send(owners)
+})
 // POST /api/owners
+app.post('/api/todos', (req, res) => {
+    console.log(req.body)
+    console.log(typeof req.body)
+    let newOwner = req.body
+    newOwner["id"] = 2
+    
+    console.log(newOwner)
 
+    todoList.push(newOwner)
+
+    res.send(newOwner)
+})
 // PUT /api/owners/:id
 
 // DELETE /api/owners/:id
+
 
 // GET /api/owners/:id/pets
 
