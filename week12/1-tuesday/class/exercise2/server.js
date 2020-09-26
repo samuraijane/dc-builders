@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public'));
 // GET /api/albums
 
 app.get('/api/albums', function (req, res) {
-    res.send(albums)
+    res.send(albums) //should use JSON.stringify because need to make sure its a string in the .send --> might just be doing it under the hood
   })
 
 // GET /api/circles
