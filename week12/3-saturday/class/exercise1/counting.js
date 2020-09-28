@@ -18,7 +18,7 @@ app.post('/api/decrement', function (req, res) {
   })
 
 app.get('/api/value', function (req, res) {
-  res.send(`Counter is at: ${count}`)
+  res.send(`${count}`)
 })
  
 app.listen(3000);
