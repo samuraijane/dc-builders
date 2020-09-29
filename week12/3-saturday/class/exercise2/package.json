@@ -1,0 +1,15 @@
+{
+  "name": "elija-to-do",
+  "version": "1.0.0",
+  "description": "To-do list created for DigitalCrafts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elijah Wilcott",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
