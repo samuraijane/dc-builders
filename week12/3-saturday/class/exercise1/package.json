@@ -1,0 +1,17 @@
+{
+  "name": "server-solution",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node counter.js",
+    "dev": "nodemon counter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
