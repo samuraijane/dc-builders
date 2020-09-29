@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>My Todo List</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div id="todo-div">
+            <h2>Check out my todo list!</h2>
+            <ul id="todo-items"></ul>
+            <form id="add-form" method="post" action="#">
+                <textarea type="text" id="new-todo" name="new-todo" placeholder="Enter your new Todo here..."></textarea><br>
+                <input type="submit" id="add-btn" name="add-btn" value="Add">
+            </form>
+            
+            <input type="button" id="rm-btn" name="rm-btn" value="Remove Selected Todo[s]">
+            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
