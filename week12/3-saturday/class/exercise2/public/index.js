@@ -29,7 +29,8 @@ function loadTodos () {
        
     })
 }
-    function stringifyFormData(fd){
+
+function stringifyFormData(fd){
         const data = {};
         for (let key of fd.keys()){
             data[key] = fd.get(key);
@@ -43,6 +44,7 @@ function loadTodos () {
         const data = new FormData(e.target);
         const stringified = stringifyFormData(data);
         console.log(stringified)
+
         fetch('./api/todos', {
             method: 'POST'
         },
