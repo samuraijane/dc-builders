@@ -44,8 +44,18 @@
 1. `brew cask install postico`
 1. Verify that Postico is installed at **/Applications/Postico.app**
 
-### Install Beekeeper on Windows or Mac
-1. Navigate to [Beekeeper Studio's homepage](https://www.beekeeperstudio.io) and follow the instructions to download and install on your machine
+### Install Beekeeper on Windows
+```
+# Install our GPG key
+wget --quiet -O - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
+
+# add our repo to your apt lists directory
+echo "deb https://dl.bintray.com/beekeeper-studio/releases disco main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio.list
+
+# Update apt and install
+sudo apt update
+sudo apt install beekeeper-studio
+```
 
 ### Updating your `PATH` variable
 If you have not yet come across this, you will. It may seem intimidating at first but when we talk about `PATH`, we are simply telling the computer where to look for commands that we use in the command line. Both Mac and Windows have a `PATH` variable. What we do below helps Windows recognize the commands related to working with PostgreSQL.
@@ -53,9 +63,10 @@ If you have not yet come across this, you will. It may seem intimidating at firs
 2. `touch .bash_profile`
 3. `vi .bash_profile`
 4. Press `i` to enter _insert_ mode
-5. Paste the code below, replacing the variables unique to your computer
+5. Paste the code below. If you are looking at this at some point in the future, the **12** you see below is the version number so it will change over time and you will need to correct it to the version you are using.
 ```
-tbd
+PATH=$PATH:/usr/lib/postgresql/12/bin/
+export PATH
 ```
 6. When you are done, press `esc` to exit _insert_ mode
 7. Press `:`, followed by `wq` and then press `return` or `enter` depending on your keyboard
