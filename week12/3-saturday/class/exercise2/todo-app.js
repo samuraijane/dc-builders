@@ -1,11 +1,11 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 const port = process.argv[2] || 3000
 
 let count = 0;
 
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(__dirname + '/public'))
 
 app.get('/todos', function (req, res) {
     res.send('TODO List')
