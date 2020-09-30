@@ -58,8 +58,6 @@ app.post('/api/todos', (req, res) => {
 
 // PUT /api/todos/:id
 app.put('/api/todos/:id', (req, res) => {
-    // console.log(req.body);
-    // console.log(req.params.id);
     let itemFound = false;
 
     for(let idx = 0; idx < todoList.length; idx++) {
@@ -72,7 +70,6 @@ app.put('/api/todos/:id', (req, res) => {
             res.send(todoList[idx]);
         }
     }
-
     res.status(404).send("404 - Item does not exist");
 })
 

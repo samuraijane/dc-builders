@@ -14,8 +14,6 @@ let deleteItem = (itemID) => {
         })
 }
 
-
-
 $().ready(() => {
     fetch('./api/todos')
         .then(res => res.json())
