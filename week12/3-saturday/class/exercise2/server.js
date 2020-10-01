@@ -76,6 +76,10 @@ app.put('/api/todos/:id', (req, res) => {
 // DELETE /api/todos/:id
 app.delete('/api/todos/:id', (req, res) => {
     let originalLength = todoList.length;
+    
+    let todoText = todoList.filter((todoItem) => {
+        return todoItem.id === parseInt(req.params.id)
+    })[0].todo
 
     todoList = todoList.filter((todoItem) => {
         return todoItem.id !== parseInt(req.params.id);
@@ -86,8 +90,8 @@ app.delete('/api/todos/:id', (req, res) => {
     if(todoList.length === originalLength){
         res.send("Item already removed");
     }
-
-    res.send("Deleted an item");
+    let body = {msg: "Item Deleted: " + todoText}
+    res.send(body);
 })
 
 app.listen(3000, function(){

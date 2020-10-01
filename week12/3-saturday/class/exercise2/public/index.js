@@ -5,20 +5,31 @@ let render = (dataArray) => {
     return todoArray.join('\n')
 }
 
-let deleteItem = (itemID) => {
-    console.log(itemID)
-    fetch('/api/todos/:id', {method: 'DELETE'})
+let fetchItems = () => {
+    fetch('/api/todos')
         .then(res => res.json())
         .then(data => {
             $('#todo-list').html(render(data))
+        })
+} 
+
+let deleteItem = (itemID) => {
+    console.log(itemID)
+    fetch('/api/todos/' + itemID, {method: 'DELETE'})
+        .then(res => res.json())
+        .then(data => {
+            //$('#messaging').text(data.msg) 
+            fetchItems()
         })
 }
 
 $().ready(() => {
-    fetch('./api/todos')
-        .then(res => res.json())
-        .then(data => {
-            // console.log(data)
-            $('#todo-list').html(render(data))
-        })
+    fetchItems()
+
+    $('#add-item').click(() => {
+        console.log('hello');
+        let newListItem = $('#list-item-value').val()
+        console.log(newListItem)
+        // addItem(newListItem)
+    })
 })

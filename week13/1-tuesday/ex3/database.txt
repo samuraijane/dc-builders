@@ -1,0 +1,8 @@
+brew services start postgresql
+psql postgres
+CREATE DATABASE acme_clothing;
+\c acme_clothing
+CREATE TABLE socks (price numeric, date_available date, personal_branding varchar, material varchar);
+CREATE TABLE shoes (price numeric, date_available date, personal_branding varchar, size integer CHECK (size >= 8 AND size <= 16));
+INSERT INTO socks VALUES (8.99, '10/01/2020', 'Retro The Billy Goat', 'Cotton');
+INSERT INTO shoes VALUES (12.99, '10/01/2020', 'Patriot', 10);
