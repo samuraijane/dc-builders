@@ -5,7 +5,7 @@ c\ acme_clothing;
 CREATE TABLE socks (
 item varchar,
 brand_name varchar,
-price integer,
+price numeric(4, 2),
 date_available date,
 material varchar
 );
@@ -14,7 +14,7 @@ material varchar
 CREATE TABLE shoes (
 item varchar,
 brand_name varchar,
-price integer,
+price numeric(4, 2),
 date_available date,
 size integer
 );
