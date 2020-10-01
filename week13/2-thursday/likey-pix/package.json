@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "db:create": "createdb likeypixdb",
+      "db:destroy": "dropdb likeypixdb",
+      "db:init": "psql -f schema.sql likeypixdb",
+      "db:seed": "psql -f seed.sql likeypixdb",
+      "db:reset": "npm run db:destroy; npm run db:create && npm run db:init && npm run db:seed",
+      "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
