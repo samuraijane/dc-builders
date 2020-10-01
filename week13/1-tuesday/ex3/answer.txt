@@ -1,0 +1,20 @@
+CREATE DATABASE acme_clothing;
+
+c\ acme_clothing;
+
+CREATE TABLE socks (
+item varchar,
+brand_name varchar,
+price integer,
+date_available date,
+material varchar
+);
+
+
+CREATE TABLE shoes (
+item varchar,
+brand_name varchar,
+price integer,
+date_available date,
+size integer
+);
