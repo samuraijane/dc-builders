@@ -23,3 +23,12 @@ values
     ('cute'),
     ('fluffy'),
     ('whorescuedwho');
+
+    insert into tags_posts 
+    (tag_id, post_id)
+values
+    (1, 2),
+    (2, 2),
+    (1, 4),
+    (3, 3),
+    (3, 5);
