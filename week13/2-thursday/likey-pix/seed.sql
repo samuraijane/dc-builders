@@ -32,3 +32,13 @@ values
     (1, 4),
     (3, 3),
     (3, 5);
+
+    insert into likes
+    (user_id, post_id)
+values
+    (1, 1),
+    (1, 2),
+    (2, 3),
+    (4, 5),
+    (2, 2),
+    (3, 1);

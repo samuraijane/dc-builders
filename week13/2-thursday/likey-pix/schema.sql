@@ -19,3 +19,8 @@ create table tags_posts (
     tag_id integer references tags (id),
     post_id integer references posts (id)
 );
+
+create table likes (
+    user_id integer references users (id),
+    post_id integer references posts (id)
+);
