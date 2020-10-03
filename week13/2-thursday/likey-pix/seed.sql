@@ -42,3 +42,14 @@ values
     (4, 5),
     (2, 2),
     (3, 1);
+
+    insert into comments
+    (comment, post_id, user_id)
+values
+    ('cutie', 5, 2),
+    ('look at those ears...', 2, 1),
+    ('puppy power!', 3, 4),
+    ('lol it never gets old!', 4, 2),
+    ('icanhazbox?', 4, 1),
+    ('Adorable!', 3, 5);
+    

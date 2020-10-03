@@ -24,3 +24,11 @@ create table likes (
     user_id integer references users (id),
     post_id integer references posts (id)
 );
+
+create table comments (
+    id serial primary key,
+    comment text not null,
+    created_at timestamp set default now(),
+    post_id integer references posts (id),
+    user_id integer references users (id)
+);
