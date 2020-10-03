@@ -1,0 +1,5 @@
+# These files and folders won't be committed to git
+.env
+.DS_Store
+node_modules
+.vscode
