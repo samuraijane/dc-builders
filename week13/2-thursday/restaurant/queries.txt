@@ -1,0 +1,5 @@
+select * from restaurants;
+select * from restaurants where takeout = true;
+select * from restaurants where distance <= 50;
+select id from restaurants where name = 'India Palace";
+select favorite_dish from restaurants where star = 5;
