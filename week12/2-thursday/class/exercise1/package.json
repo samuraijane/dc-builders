@@ -4,14 +4,24 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+=======
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> master
   },
   "author": "Adam Szaruga",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+<<<<<<< HEAD
+    "express": "^4.17.1"
+=======
     "express": "^4.16.4"
+>>>>>>> master
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

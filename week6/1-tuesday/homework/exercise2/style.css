@@ -1,0 +1,9 @@
+label, select {
+    width: 175px;
+}
+
+p {
+    display: flex;
+}
+
+

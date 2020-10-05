@@ -1,14 +1,79 @@
-document.addEventListener("DOMContentLoaded", function(){
+const button = document.getElementById('button');
+const dataCont = document.getElementById('doggie');
+
+button.addEventListener('click', function(e){
+    e.preventDefault();
+    button.disabled = true;
+    button.innerText = "Generating Doggo...";
+    
     // Handler when the DOM is fully loaded
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=ffe2cd367264d64431346733cc7afb14')
+    setTimeout(() => {
+    fetch('https://dog.ceo/api/breeds/image/random')
         .then(response => response.json())
-        .then(data => {
-            var dataCont = document.getElementById('weather-data');
-            var item = document.createElement("p");
-            var text = data.weather[0].description;
+        .then(dogData => {
+            var dogPic = document.createElement('img');
             // item.innerHTML = JSON.stringify(data);
-            item.innerHTML = text;
-            dataCont.appendChild(item);
-            console.log(data);
-        } );
+            dogPic.src = dogData.message;
+
+            // dogPic.setAttribute('src', dogData.message);
+            dataCont.appendChild(dogPic);
+            console.log(dogData);
+        });
+    button.disabled = false;
+    button.innerText = "Generate Doggo";
+    }, 300);
   });
+
+
+  //set a promise to prevent button enabling until done
+//   let form = document.getElementById("formcoookie");
+
+
+// form.addEventListener("submit", function(e){
+//     e.preventDefault();
+//     let subbut = document.getElementById("submit-button");
+//     subbut.disabled=true;
+//     let newDiv = document.createElement('div');
+//     newDiv.innerHTML = "Please wait while we review your order..."
+//     form.appendChild(newDiv);
+
+//     console.log(e);
+//     const data = new FormData(form);
+//     console.log(stringifyFormData(data));
+//     const stringified = stringifyFormData(data);
+
+//     let dataInfo = data.forEach(listIt);
+
+//     function listIt(item, index) {
+//         newDiv.innerHTML += index + ": " + item + "<br />";
+//     } 
+
+//     postData(stringified).then(data => {
+//         subbut.disabled=false;
+//         console.log(`Your form has been submitted with the following data.\n\n${data}`)
+//         let dataInfo = data.forEach(listIt);
+//         function listIt(item, index) {
+//             newDiv.innerHTML += index + ":" + item + "<br>"; 
+//         }
+//         newDiv.innerHTML = `Here is your order: ${dataInfo}`;
+//     }
+// );
+// });
+
+// function stringifyFormData(fd) {
+//     const data = {};
+//     for (let key of fd.keys()){
+//         data[key] = fd.get(key);
+//     }
+//     return JSON.stringify(data,null,4);
+// };
+
+
+// const postData = (data) => {
+//     const promise = new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res(data);
+//         }, 3000);
+//     });
+//     return promise;
+// }

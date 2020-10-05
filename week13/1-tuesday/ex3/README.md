@@ -7,3 +7,13 @@ _Following up on our meeting yesterday, we currently offer only shoes and socks 
 Your homework assignment is to write the commands you would use to build a database for ACME Clothing. Be sure to read the email closely as it contains all the information you need for tables and columns. Provide at least one INSERT statement for each table that adds a row to it.
 
 List your commands in order so that another developer could simply copy/paste them and build the database on his/her own machine.
+
+ CREATE TABLE ACMECLOTHINGSHOE (
+  id serial UNIQUE,
+  SHOENAME varchar,
+  PRICE money,
+  INSTOCK BOOLEAN,
+  SIZE integer(SIZE between 8 and 16),
+  INSTOCK BOOLEAN,
+  RELEASE DATE
+);

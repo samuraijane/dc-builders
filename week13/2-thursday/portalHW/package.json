@@ -1,0 +1,17 @@
+{
+  "name": "portalHW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:create": "createdb restaurantdb",
+    "db:destroy": "dropdb restaurantdb",
+    "db:init": "psql -f schema.sql restaurantdb",
+    "db:seed": "psql -f seed.sql restaurantdb",
+    "db:reset": "npm run db:destroy; npm run db:create && npm run db:init && npm run db:seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
