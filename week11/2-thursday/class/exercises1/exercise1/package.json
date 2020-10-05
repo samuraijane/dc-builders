@@ -1,0 +1,21 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Week 11 Thusday exercise 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "speedytest": "speed-test --help",
+    "speedy": "speed-test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R. Powell",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "download-file": "^0.1.5",
+    "lodash": "^4.17.20",
+    "speed-test": "^2.1.0",
+    "wallpaper": "^4.4.1"
+  }
+}

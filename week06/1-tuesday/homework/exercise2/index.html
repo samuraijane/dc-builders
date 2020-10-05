@@ -5,11 +5,44 @@
     <meta charset="utf-8">
     <title>Week6 – Tuesday Homework Exercise 2</title>
     <meta name="description" content="Week6 – Tuesday Homework Exercise 2">
-    <meta name="author" content="<yourNameGoesHere>">
+    <meta name="author" content="robP">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <form id="formset">
+      <fieldset>
+        <legend>CONTACT US</legend>
+        <p>
+          <label for="name">  Full Name: </label>
+          <input class="textbox" type="text" name="name" id="name" placeholder="John Doe"/>
+        </p>
+        <p>
+          <label for="email"> E-Mail Address: </label>
+          <input class="textbox" type="text" name="email" id="email" placeholder="me@email.com"/>
+        </p>
+        <p>
+        <label for="language"> Language: </label>
+        <select name="lg" id="language">
+          <option value="" disabled selected>--Choose Language--</option>
+          <option value="english">English</option>
+          <option value="deutsch">Deutsch</option>
+          <option value="english">Espanol</option>
+          <option value="Japenese">日本語</option>
+          <option value="francais">Français</option>
+          <option value="italiano">Italiano</option>
+          <option value="Thai">ภาษาไทย</option>
+          <option value="Chinese">中文</option>
+        </select>
+        </p>
+        <p>
+        <label for="more-info"> Anything else? </label>
+          <textarea id="more-info" name="more-info" placeholder="Ask away..."></textarea> 
+        </p>    
+      </fieldset>
+      <br>
+      <input type="submit" id="submit-button" value="submit"/>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>

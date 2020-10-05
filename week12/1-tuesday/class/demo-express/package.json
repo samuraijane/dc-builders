@@ -1,7 +1,7 @@
 {
   "name": "demo-express",
   "version": "1.0.0",
-  "description": "My first web server",
+  "description": "Webserver for class",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,12 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "webserver",
     "awesome",
     "express"
   ],
-  "author": "D. Stough",
-  "license": "MIT",
+  "author": "Rob P",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
