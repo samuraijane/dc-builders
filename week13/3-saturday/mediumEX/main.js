@@ -35,7 +35,7 @@ app.get("/tasks", (req, res) => {
 });
 
 
-app.patch("/tasks/:id/is_completed", function(req, res){
+app.patch("/tasks/:id/is_completed", (req, res) => {
     const taskID = req.params.id;
     const completed = req.body.is_completed;
     console.log(taskID); 
