@@ -1,0 +1,2 @@
+const db = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`);
+const { DB_NAME, DB_LOCAL, DB_PASSWORD, PORT, DB_USER } = require("./config");
