@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 // CREATE A TASK
 app.post("/tasks", (req, res) => {
     const newTaskTitle = req.body.title;
-    db.none("INSERT INTO tasks (title) VALUES ($1)", [newTaskTitle])
+    db.none('INSERT INTO tasks (title) VALUES ($1)', [newTaskTitle])
         .then(() => {
             res.send(`Task "${newTaskTitle}" was created`);
         })
