@@ -2,6 +2,8 @@
 .DS_Store
 node_modules
 .vscode
+.history
+.env
 
 # Instructor Files
 admin

@@ -1,0 +1,1 @@
+// 2) Write a file named "hello.js" that exports the string 'Hello'. Write another file named "world.js" that requires "hello.js", appends ' World' to that value and exports the new string. Write a third file named "helloworld.js" that requires "world.js" and console logs its value. You should see "Hello World" logged in your console.

@@ -1,0 +1,21 @@
+{
+  "name": "counting-server",
+  "version": "1.0.0",
+  "description": " Server that keeps track of a counter ",
+  "main": "counter.js",
+  "scripts": {
+    "start": "node counter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "counter"
+  ],
+  "author": "S.Graham",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
