@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 
 const app = require("express")();
@@ -10,7 +9,7 @@ const Sequelize = require('sequelize');
 const { DB_LOCAL, DB_PASSWORD, DB_NAME, DB_USER, PORT } = require("./config");
 const { User } = require('./models');
 
-const apiUser = require("./routes/usersRouter");
+const apiUser = require("./api/apiUser");
 
 app.use(bodyParser.json());
 
