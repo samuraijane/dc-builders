@@ -19,9 +19,9 @@ app.get("/heartbeat", function(req, res) {
   });
 });
 
-app.post("/tasks", function(req, res) {
+app.post("/books", function(req, res) {
   res.json({
-    api: "tasks"
+    api: "books"
   });
 });
 
