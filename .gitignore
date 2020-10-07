@@ -3,5 +3,9 @@
 node_modules
 .vscode
 .env
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d937c35223f3ce389e7e977776ff26ca18d18f5
 # Instructor Files
 admin
