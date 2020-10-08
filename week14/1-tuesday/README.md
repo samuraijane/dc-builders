@@ -12,10 +12,3 @@
 
 ## Homework
 1. to be determined
-
-### Install PostgreSQL on Mac
-1. If you do not have homebrew, install it first with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
-1. `brew install postgresql`
-1. Confirm the installation with `psql --version` or `psql -V`
-1. Spin up a database server with `brew services start postgresql`
-1. Interact with the Postgres shell with `psql postgres`
