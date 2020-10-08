@@ -14,6 +14,9 @@ const apiUser = require("./api/apiUser");
 // middleware that lets you see body
 app.use(bodyParser.json());
 
+
+// app.use(express.static(__dirname + "/classDemo")) // needed?
+
 app.get("/heartbeat", (req, res) => {
   res.json({
     is: "working"
@@ -30,8 +33,30 @@ app.post("/tasks", (req, res) => {
 const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`);
 
 // called like function, passes through apiUser.js
+
 apiUser(app, db);
 
 app.listen(PORT, function() {
   console.log(`The server at port ${PORT} is listening.`);
 });
+
+
+
+
+
+
+// $().ready(()=> {
+//   fetch('./api/value')
+//   .then(res => res.json())
+//   .then(data => {
+//       $('#counter-value').html(data)
+//   })
+
+//   let incButton = document.getElementById('increment')
+//   incButton.addEventListener('click', ()=>{
+//       fetch('./api/increment', { method: 'POST'})
+//       .then(res => res.json())
+//       .then(data => {
+//           $('#counter-value').html(data)
+//       })
+//   })
