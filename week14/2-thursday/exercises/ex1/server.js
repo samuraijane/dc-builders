@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/')); 
+app.use(express.static(__dirname + '/public')); 
 
 app.post("/books", function(req, res) {
 	res.json({
