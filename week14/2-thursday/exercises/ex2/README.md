@@ -7,3 +7,4 @@ Things to keep in mind
 * Don't forget to add the middleware for body-parse so you can get at the data that comes through
 * Create a start script in package.json
 * Use fetch or another HTTP method in the client to send the data to the server
+* When the endpoint is hit, use `res.send` for the response
