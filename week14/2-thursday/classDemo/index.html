@@ -4,18 +4,24 @@
 </head>
 
 <body>
-    <h1>INSERT INFO HERE</h1>
     <form id="form">
-        <label for ="title">TITLE</label>
-        <input id="title" type="text" name="title" placeholder="title"/>
-        <label for ="author">AUTHOR</label>
-        <input id="author" type="text" name="author" placeholder="author"/>
-        <label for ="publicationDate">PUBLICATION DATE</label>
-        <input id="publicationDate" type="text" name="publicationDate" placeholder="PUB DATE"/>
-        <input type="submit" value="Enter">
+        <fieldset>
+            <legend><h1>LIBRARY DETAILS</h1></legend>
+                <label for ="title">TITLE</label>
+                <input id="title" type="text" name="title" placeholder="title"/>
+                <label for ="author">AUTHOR</label>
+                <input id="author" type="text" name="author" placeholder="author"/>
+                <label for ="pubdate">PUBLICATION DATE</label>
+                <input id="pubdate" type="date" name="pubdate" placeholder="PUB DATE"/>
+                <input type="submit" value="Enter">
+        </fieldset>
+        <div id="infoList"></div>
     </form>
-    <h2 id="currentInfo"></h2>
+    <div id="currentInfo">
+        <ul id="currentBook"></ul>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="./server.js"></script> -->
     <script src="./index.js"></script>
 </body>
 

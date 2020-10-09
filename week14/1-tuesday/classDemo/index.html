@@ -5,10 +5,13 @@
 
 <body>
     <h1>INSERT INFO HERE</h1>
-    <form method="post" action="/create">
-        <input id="firstName" type="text" name="firstName" placeholder="First Name"/>
-        <input id="lastName" type="text" name="lastName" placeholder="Last Name"/>
-        <input id="email" type="text" name="email" placeholder="E-MAIL"/>
+    <form id ="form" method="post" action="/create">
+        <label for ="title">TITLE</label>
+        <input id="title" type="text" name="firstName" placeholder="title"/>
+        <label for ="author">AUTHOR</label>
+        <input id="author" type="text" name="author" placeholder="author"/>
+        <label for ="publicationDate">PUBLICATION DATE</label>
+        <input id="publicationDate" type="text" name="publicationDate" placeholder="E-MAIL"/>
         <input type="submit" value="Enter">
     </form>
     <h2 id="currentInfo"></h2>
