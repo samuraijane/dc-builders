@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "demo2",
+=======
+  "name": "demo",
+>>>>>>> a63dab97856d0da810913164b7449d0eed8803e3
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "body-parser": "^1.19.0",
+>>>>>>> a63dab97856d0da810913164b7449d0eed8803e3
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.4.0",
