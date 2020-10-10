@@ -7,8 +7,11 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public')); 
 
 app.post("/books", function(req, res) {
+    const {author, title, publicationDate} =req.body; //destructuring
 	res.json({
-        api: "hello world"
+        author,
+        title,
+        publicationDate
     });
 });
 
