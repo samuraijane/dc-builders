@@ -7,7 +7,7 @@ $().ready(()=>{
         return JSON.stringify(data, null, 2);
     }
     async function postData(url, body){
-        const response=await fetch(url, {
+        const response = await fetch(url, {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -16,11 +16,11 @@ $().ready(()=>{
         })
         return response.json();
     }
-    $('#bookForm').submit((e)=>{
+    $('#bookForm').submit((e) => {
         e.preventDefault();
-        const data=new FormData(e.target);
-        const stringified=stringifyFormData(data);
+        const data = new FormData(e.target);
+        const stringified = stringifyFormData(data);
         postData('http://localhost:3001/books',stringified)
-        .then(data => console.log('data',data));
+        .then(data => console.log('data', data));
     });
 });
