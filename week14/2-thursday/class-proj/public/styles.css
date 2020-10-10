@@ -1,0 +1,11 @@
+.book-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-entry-header, #book-entry {
+    margin: auto;
+}
+
+
