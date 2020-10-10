@@ -3,7 +3,6 @@
 $().ready(function () {
 
 
-    var idCount = 0;
     $('#form').on("submit", function(event){
         event.preventDefault();
 
@@ -13,7 +12,6 @@ $().ready(function () {
         idCount++;
 
         let bookInfo = {
-            "id": idCount,
             "author": author,
             "title": title,
             "date": date
