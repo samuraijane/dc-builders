@@ -8,8 +8,12 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.post("/books", function(req, res) {
-    //Syntax below is called "destructuring"
-    const {author, title, publicationDate} = req.body;
+    //Syntax below in curly brackets is called "destructuring"
+    const { author, title, publicationDate } = req.body;
+    // Without "destructuring," it would look like below:
+    // const author = req.body.author;
+    // const title = req.body.title;
+    // const publicationDate = req.body.publicationDate
   res.json({
     author,
     title,
