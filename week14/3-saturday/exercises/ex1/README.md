@@ -8,4 +8,8 @@ the library database has a table called author with data type string
 you have imported your dependencies into server.js
 you have created a database connection in server.js
 run the npx command that creates the model Author with the fields that correspond to the Author table columns
+you should now have a models directory
+create an api directory
+inside this direcotry, create authorApi.js
+this is where you will create your endpoint
 
