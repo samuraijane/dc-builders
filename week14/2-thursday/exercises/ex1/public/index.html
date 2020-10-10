@@ -9,27 +9,27 @@
 <body>
     <form id="form">
         <fieldset>
-            <legend>My Library</legend>
+            <legend>Book Information</legend>
             <div>
-                <label for="title">Title: </label>
+                <label for="title">Title:</label>
                 <input type="text" name="title" id="title">
             </div>
             <div> 
-                <label for="author">Author: </label>
+                <label for="author">Author:</label>
                 <input type="text" name="author" id="author">  
             </div>
             <div>
-                <label for="date">Publication Date: </label>
+                <label for="date">Publication Date:</label>
                 <input type="date" name="publicationDate" id="publicationDate">
             </div>
-        </fieldset>
-        <div id="submit">
-            <button type="submit" id="submit" value="submit">Submit</button>
-        </div>
         
+            <div id="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
     </form>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./index.js"></script>
-    <script src="./server.js"></script>
+    
 </body>
 </html>
