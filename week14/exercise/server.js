@@ -17,12 +17,23 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
+
+
+
+
+
+
+var allBooks = [];
+
 app.post('/books', function(req, res) {
     console.log("book recieved");
     console.log(req.body)
-    res.send(req.body)
+    allBooks.push(req.body);
 });
 
+app.get('/books', function(req, res) {
+  res.send(allBooks);
+})
 const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`);
 
 //apiUser(app, db);
