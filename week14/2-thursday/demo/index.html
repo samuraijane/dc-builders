@@ -6,34 +6,29 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="form" action="#">
-      <label for="title">Title:</label><br />
-      <input
-        type="text"
-        id="title"
-        name="title"
-        value=""
-        placeholder="Title"
-      /><br />
-      <label for="author">Author:</label><br />
-      <input
-        type="text"
-        id="author"
-        name="author"
-        value=""
-        placeholder="Author"
-      /><br />
-      <label for="publicationDate">Publication Date:</label><br />
-      <input
-        type="text"
-        id="publicationDate"
-        name="publicationDate"
-        value=""
-        placeholder="Publication Date"
-      />
-      <br /><br />
+    <form id="form">
+      <fieldset>
+        <legend>Book Details</legend>
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" placeholder="Title" />
+        </div>
+        <div>
+          <label for="author">Author:</label><br />
+          <input type="text" id="author" name="author" placeholder="Author" />
+        </div>
+        <div>
+          <label for="publicationDate">Publication Date:</label><br />
+          <input
+            type="date"
+            id="publicationDate"
+            name="publicationDate"
+            placeholder="Publication Date"
+          />
+        </div>
+      </fieldset>
       <button type="submit">Submit</button>
     </form>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
