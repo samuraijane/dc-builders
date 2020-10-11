@@ -14,10 +14,10 @@ const Sequelize = require('sequelize');
 const { DB_LOCAL, DB_PASSWORD, DB_NAME, DB_USER, PORT } = require("./config");
 
 // const { Author, Boooks } = require('./models');
-
-const apiAuthor = require("./api/apiAuthor");
 const apiBooks = require("./api/apiBooks");
-
+// const apiAuthor = require("./api/apiAuthor");
+// const apiTitle = require("./api/apiTitle");
+// const apiPubDate = require("./api/apiPubDate");
 
 // middleware that lets you see body
 app.use(bodyParser.json());
@@ -36,6 +36,9 @@ const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME
 
 // called like function, passes through apiUser.js
 apiBooks(app, db);
+// apiAuthor(app,db);
+// apiTitle(app,db);
+// apiPubDate(app,db)
 
 
 // callback

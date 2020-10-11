@@ -1,18 +1,30 @@
-module.exports = (app, db) => {
+module.exports = (app, db) => { 
 
-    // -----------------------------------------------------------------------------
-    //                                     POST
-    // -----------------------------------------------------------------------------
-    app.post("/authors",async (req, res) => {
-        const {author} = req.body;
-        const newAuthor = await db.Author.create({
+
+  app.post("/Author",async (req, res) => {
+      const {title, author, pubdate} = req.body;
+
+      const newAuthor = await db.Author.create({
           author
-        })
-      
-        res.json({
-          api: "Authors",
+      })
+  
+      res.json({
+          api: "Author",
           id: newAuthor.id,
           author
-        });
       });
-    }
+  });
+
+  // app.get("/books", async (req, res) => {
+  //     const books = await db.Boooks.findAll({
+  //         attributes: ['title', 'author'],
+  //        })
+  //     console.log("Get test");
+      
+  //     res.json({
+  //     is: "working" , 
+  //     books
+  //     })
+  // });
+
+}

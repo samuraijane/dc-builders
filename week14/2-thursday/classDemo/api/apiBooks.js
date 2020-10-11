@@ -10,9 +10,9 @@ module.exports = (app, db) => {
         pubdate
         })
 
-        const newAuthor = await db.Author.create({
-            author
-        })
+        // const newAuthor = await db.Author.create({
+        //     author
+        // })
     
         res.json({
             api: "book list",
@@ -20,9 +20,9 @@ module.exports = (app, db) => {
             title,
             author,
             pubdate,
-            api: "Author",
-            id: newAuthor.id,
-            author
+            // api: "Author",
+            // id: newAuthor.id,
+            // author
         });
     });
 
