@@ -1,21 +1,21 @@
 {
   "development": {
-    "username": "elijahwilcott",
-    "password": null,
+    "username": "elijah",
+    "password": "tempword",
     "database": "library",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "elijahwilcott",
-    "password": null,
+    "username": "elijah",
+    "password": "tempword",
     "database": "library",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "elijahwilcott",
-    "password": null,
+    "username": "elijah",
+    "password": "tempword",
     "database": "library",
     "host": "127.0.0.1",
     "dialect": "postgres"
