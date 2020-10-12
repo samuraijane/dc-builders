@@ -5,7 +5,6 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 
 app.use(bodyParser.json());
-
 app.post("/books", function (req, res) {
   const { author, title, publicationDate } = req.body;
   res.json({
