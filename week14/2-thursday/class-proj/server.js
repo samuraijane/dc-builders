@@ -8,10 +8,16 @@ const Sequelize = require('sequelize');
 
 const { DB_LOCAL, DB_PASSWORD, DB_NAME, DB_USER, PORT } = require("./config"); //destructuring!!!
 const { Author, Books } = require('./models');
+//const db = require('./models');
 const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`);
+
+//const apiAuthor = require("./api/apiAuthor");
+//const apiBooks = require("./api/apiBooks");
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
+//apiAuthor(app, db);
+//apiBooks(app, db);
 
 app.post('/books', async function(req, res) {
     console.log(req.body);

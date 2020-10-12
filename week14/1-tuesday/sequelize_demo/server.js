@@ -12,7 +12,6 @@ const { User } = require('./models');
 const apiUser = require("./api/apiUser");
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/heartbeat", function(req, res) {
   res.json({
