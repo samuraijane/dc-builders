@@ -8,23 +8,25 @@ $().ready(()=>{
         return JSON.stringify(data,null,2);
     }
     async function postData(url,body){
-        const response=await fetch(url,{
+        console.log(body);
+        const response = await fetch(url,{
             method:'POST',
             headers:{
-                'Content-Type':'application.json'
+                
+                'Content-Type':'application/json'
             },
-            body
-        })
-        return response.json();
+            body,
+        });
+
     }
     $('#form').submit((e)=>{
         e.preventDefault();
         const data=new FormData(e.target);
         const stringified=stringifyFormData(data);
-        postData('https://localhost:3001/books',stringified);
+        postData('http://localhost:3001/author',stringified)
         // console.log(`title is ${title} and author is ${author} and it was published on ${pubDate}!`)
         // postData('localhost:3001/books',stringified)
-        // .then(data =>console.log('data',data))
+        .then(data =>console.log('data',data))
     })
 });
 
