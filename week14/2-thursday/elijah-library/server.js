@@ -1,6 +1,9 @@
 const express = require('express');
 const app = require('express')();
 const bodyParser = require('body-parser');
+const db = require("./models");
+const pgp = require("pg-promise")();
+const Sequelize = require("sequelize");
 
 //This is middleware
 app.use(bodyParser.json());
@@ -21,8 +24,9 @@ app.post("/books", function(req, res) {
     publicationDate
   });
 });
+const apiAuthor = require("./api/apiAuthor.")
+apiAuthor(app, db);
 
 app.listen(3001, function() {
   console.log("The server is listening...")
 });
-

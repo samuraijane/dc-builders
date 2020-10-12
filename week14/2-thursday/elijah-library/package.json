@@ -16,7 +16,8 @@
     "express": "^4.17.1",
     "pg": "^8.4.0",
     "pg-promise": "^10.6.2",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
