@@ -20,9 +20,8 @@ $().ready(() => {
     e.preventDefault();
     const data = new FormData(e.target);
     const stringified = stringifyFormData(data);
-    postData("http://localhost:3001/books", stringified)
-      // console.log(`title is ${title} and author is ${author} and it was published on ${pubDate}!`)
-      // postData('localhost:3001/books',stringified)
-      .then((data) => console.log("data", data));
+    postData("http://localhost:3001/author", stringified).then((data) =>
+      console.log("data", data)
+    );
   });
 });
