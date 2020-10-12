@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "crawdad16",
+    "password": null,
+    "database": "readit_db_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "crawdad16",
+    "password": null,
+    "database": "readit_db_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "crawdad16",
+    "password": null,
+    "database": "readit_db_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

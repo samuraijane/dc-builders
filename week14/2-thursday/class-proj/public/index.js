@@ -8,9 +8,9 @@ $().ready(() => {
         // console.log($("#book-entry").serialize());
         // console.log($("#book-entry").serializeArray());
         let bookPayload = {
-            "book title": bookTitle, 
-            "book author": bookAuthor,
-            "book publication date": bookDate
+            title : bookTitle, 
+            author : bookAuthor,
+            date : bookDate
         }
 
         fetch("http://localhost:3001/books", {
