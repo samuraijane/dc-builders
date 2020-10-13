@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome To Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 </head>
     <body>
         <div id="container">
-        <h1 class="title">My Awesome To Do App</h1>
-        <form id="new-todo">
-            <label>Enter your Task Item:</label>
-            <input id="new-todo-text" type="text" placeholder="Your Tasks Here" name="todo" />
-            <div class="to-do-list">
-                <div class="tasks">
-                    <button id="addTask">Add Task</button>
-                    <ul id="TodoList">
+            <h1 class="title">My Awesome To Do App</h1>
+            <form id="new-todo">
+                <label>Enter your Task Item:</label>
+                <input type="text" id="newTask"  placeholder="Enter new task" name="todo" />
+                <button type="submit"><i class="fas fa-plus-square"></i></button>
+            </form>
+                <div class="todoList">
+                    <ul>
 
                     </ul>
-                    <!-- <div class="task">
-                        <input type="checkbox" id="task-1"/>
-                        <label for ="task-1"> </label>
-                    </div> -->
+                    <a class="clearAll" id="clearAll">Clear All</a>
                 </div>
-            </div>
-        </form>
-        </div>
-        <div class="removeTask">
-            <button class="deleteItem">Delete Item</button>
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
