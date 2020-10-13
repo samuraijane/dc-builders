@@ -35,68 +35,86 @@ var owners = [
   },
 ];
 
+let autoIncrement = 3;
+
 // GET /api/owners
 app.get("/api/owners", (req, res) => {
   res.send(owners);
 });
-
 // GET /api/owners/:id
 app.get("/api/owners/:id", (req, res) => {
-  let id = parseInt(req.params.id);
-  let foundId = owners.find((owner) => {
-    return owner.id === id;
+  let result = owners.filter((ownersItem) => {
+    return ownersItem.id === parseInt(req.params.id);
   });
-  res.send(foundId);
+
+  if (result.length == 1) {
+    res.send(result[0]);
+  } else if (result.length == 0) {
+    res.status(404).send("Owners item does not exist");
+  } else {
+    res.status(500).send("The server had an error: to many errors");
+  }
 });
+
 // POST /api/owners
 app.post("/api/owners", (req, res) => {
-  let nextID =
-    owners.reduce((acc, curr) => {
-      if (curr.id > acc) {
-        return curr.id;
-      }
-      return acc++;
-    }, 0) + 1;
-  let newOwner = {
-    id: nextID,
-    name: req.body.name,
-    pets: req.body.pets,
-  };
-  owners.push(newOwner);
+  console.log(req.body);
+  console.log(typeof req.body);
 
-  res.send(newOwner);
+  let newItem = req.body;
+  newItem["id"] = autoIncrement++;
+
+  console.log(newItem);
+  owners.push(newItem);
+
+  res.send(newItem);
 });
 // PUT /api/owners/:id
 app.put("/api/owners/:id", (req, res) => {
-  let id = parseInt(req.params.id);
-  let foundID = owners.find((owner) => {
-    return owner.id === id;
-  });
-  foundID.name = req.body.name;
+  console.log(req.body);
+  console.log(req.params.id);
 
-  res.send(foundID);
-});
-// DELETE /api/owners/:id
-app.delete("/api/owners/:id", (req, res) => {
-  let id = parseInt(req.params.id);
-  let removedOwner;
-  let foundID = owners.find((owner) => {
-    return owner.id === id;
-  });
-  for (let i = 0; i < owners.length; i++) {
-    if (owners[i] === foundID) {
-      removedOwner = owners.splice(i, 1);
+  let mutateItem;
+  for (let idx = 0; idx < owners.length; idx++) {
+    if (owners[idx].id === parseInt(req.params.id)) {
+      owners[idx]["isCompleted"] = req.body.isCompleted;
+      owners[idx]["owner"] = req.body.owner;
+      res.send(owners[idx]);
     }
   }
-  res.send(removedOwner);
+
+  res.status(404).send("item does not exist");
+});
+
+res.send(foundID);
+
+// DELETE /api/owners/:id
+app.delete("/api/owners/:id", (req, res) => {
+  let origianlLength = owners.length;
+
+  owners = owners.filter((owner) => {
+    return owner.id !== parseInt(req.params.id);
+  });
+  console.log(owners);
+  if (owners.length === originalLength) {
+    res.send("owner already deleted");
+  }
+  res.send("deleted this owner");
 });
 // GET /api/owners/:id/pets
 app.get("/api/owners/:id/pets", (req, res) => {
-  let id = parseInt(req.params.id);
-  let foundId = owners.find((owner) => {
-    return owner.id === id;
+  let result = owners.filter((ownersItem) => {
+    return ownersItem.id === parseInt(req.params.id);
   });
-  res.send(foundId.pets);
+  console.log(result[0].pets[0].name);
+
+  if (result.length == 1) {
+    res.send(result[0]);
+  } else if (result.length == 0) {
+    res.status(404).send("Owners item does not exist");
+  } else {
+    res.status(500).send("The server had an error: to many errors");
+  }
 });
 // GET /api/owners/:id/pets/:petId
 app.get("/api/owners/:id/pets/:petId", (req, res) => {
@@ -149,11 +167,7 @@ app.delete("/api/owners/:id/pets/:petId", (req, res) => {
   const owner = owners.find((item) => item.id === parseInt(req.params.id));
   if (!owner) res.status(400).send("owner not correct");
 
-  index = req.params.petId - 1;
-
-  owner.pets.splice(index, 1);
-  res.send(owner);
-});
-app.listen(3000, function () {
-  console.log("Pets API is now listening on port 3000...");
+  app.listen(3000, function () {
+    console.log("Pets API is now listening on port 3000...");
+  });
 });

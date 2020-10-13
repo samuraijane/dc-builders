@@ -1,10 +1,8 @@
 module.exports = (app, db) => {
   app.post("/users", async (req, res) => {
-    const { firstName, lastName, email } = req.body;
+    const { author } = req.body;
     const newUser = await db.User.create({
-      firstName,
-      lastName,
-      email,
+      name: author,
     });
 
     // Send back the new user's ID in the response:

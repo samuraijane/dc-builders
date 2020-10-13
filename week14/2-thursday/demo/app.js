@@ -26,7 +26,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
   const stringified = stringifyFormData(data);
-  postData("http://localhost:3001/books", stringified);
+  postData("http://localhost:3001/authors", stringified);
 };
 // .then((data) =>
 //     console.log("data", data)
