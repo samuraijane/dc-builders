@@ -1,34 +1,20 @@
 {
   "development": {
-<<<<<<< HEAD
     "username": "alexandrakasper",
     "password": null,
-    "database": "library",
-=======
-    "username": "anna",
-    "password": null,
-    "database": "database_development",
->>>>>>> master
+    "database": "books",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-<<<<<<< HEAD
-    "username": "root",
-=======
-    "username": "anna",
->>>>>>> master
+    "username": "alexandrakasper",
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-<<<<<<< HEAD
-    "username": "root",
-=======
-    "username": "anna",
->>>>>>> master
+    "username": "alexandrakasper",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",

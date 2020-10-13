@@ -1,10 +1,11 @@
 function stringifyFormData(fd) {
     const data = {
         title: fd.get("title"),
-        author: fd.get("author"),
+        firstName: fd.get("firstName"),
+        lastName: fd.get("lastName"),
         publicationDate: fd.get("publicationDate"),
     };
-    return JSON.stringify(data, null, 3);
+    return JSON.stringify(data, null, 2);
 }
 
 async function postData(url, data) {
@@ -15,13 +16,14 @@ async function postData(url, data) {
         },
         body: data
     });
+    return response.json();
 }
 
 const handleSubmit = e => {
     e.preventDefault();
     const data = new FormData(e.target);
     const stringified = stringifyFormData(data);
-    postData('http://localhost:3001/books', stringified).then();
+    postData('http://localhost:3001/authors', stringified).then(data => console.log(data));
 }
 
 const form = document.getElementById("form");
