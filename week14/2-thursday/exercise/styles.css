@@ -1,0 +1,19 @@
+.form {
+  border: 10px bold black;
+  padding: 10px;
+}
+
+.form legend {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form input {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form button {
+  margin-top: 10px;
+}
