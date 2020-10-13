@@ -25,9 +25,9 @@ $().ready(function () {
         .then(response => console.log(response.status))
         console.log(bookInfo)
         
-         $(".bookList").append(
-                `${bookInfo.author} published their book, ${bookInfo.title}, on ${bookInfo.date} <br>`
-            )
+        //  $(".bookList").append(
+        //         `${bookInfo.author} published their book, ${bookInfo.title}, on ${bookInfo.date} <br>`
+        //     )
     })
 
       

@@ -9,11 +9,7 @@ const Sequelize = require('sequelize');
 const { DB_LOCAL, DB_PASSWORD, DB_NAME, DB_USER, PORT } = require("./config");
 const { User } = require('./models');
 
-<<<<<<< HEAD
 const apiUser = require("./api/apiUser");
-=======
-const apiUser = require("./routes/usersRouter");
->>>>>>> master
 
 app.use(bodyParser.json());
 
@@ -35,8 +31,4 @@ apiUser(app, db);
 
 app.listen(PORT, function() {
   console.log(`The server at port ${PORT} is listening.`);
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> master

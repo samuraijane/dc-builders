@@ -4,22 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
-=======
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> master
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "body-parser": "^1.19.0",
->>>>>>> master
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.4.0",

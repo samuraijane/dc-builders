@@ -1,36 +1,21 @@
 {
   "development": {
-<<<<<<< HEAD
     "username": "carl",
     "password": "walkingdead",
-=======
-    "username": "anna",
-    "password": null,
->>>>>>> master
     "database": "database_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-<<<<<<< HEAD
     "username": "carl",
     "password": "walkingdead",
-=======
-    "username": "anna",
-    "password": null,
->>>>>>> master
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-<<<<<<< HEAD
     "username": "carl",
     "password": "walkingdead",
-=======
-    "username": "anna",
-    "password": null,
->>>>>>> master
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
