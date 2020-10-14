@@ -32,7 +32,7 @@ app.get("/heartbeat", (req, res) => {
 
 
 // wraps in pg promise
-const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`);
+const database = pgp(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_LOCAL}/${DB_NAME}`); //not needed
 
 // called like function, passes through apiUser.js
 apiBooks(app, db);
