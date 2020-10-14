@@ -63,10 +63,17 @@ app.post("/api/owners", (req, res) => {
 
   let newItem = req.body;
   newItem["id"] = autoIncrement++;
+<<<<<<< Updated upstream
 
   console.log(newItem);
   owners.push(newItem);
 
+=======
+
+  console.log(newItem);
+  owners.push(newItem);
+
+>>>>>>> Stashed changes
   res.send(newItem);
 });
 // PUT /api/owners/:id
@@ -85,8 +92,11 @@ app.put("/api/owners/:id", (req, res) => {
 
   res.status(404).send("item does not exist");
 });
+<<<<<<< Updated upstream
 
 res.send(foundID);
+=======
+>>>>>>> Stashed changes
 
 // DELETE /api/owners/:id
 app.delete("/api/owners/:id", (req, res) => {
@@ -167,7 +177,12 @@ app.delete("/api/owners/:id/pets/:petId", (req, res) => {
   const owner = owners.find((item) => item.id === parseInt(req.params.id));
   if (!owner) res.status(400).send("owner not correct");
 
+<<<<<<< Updated upstream
   app.listen(3000, function () {
     console.log("Pets API is now listening on port 3000...");
   });
+=======
+app.listen(3000, function () {
+  console.log("Pets API is now listening on port 3000...");
+>>>>>>> Stashed changes
 });

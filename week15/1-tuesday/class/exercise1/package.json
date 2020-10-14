@@ -1,0 +1,13 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Your job is to add persistence to your TODO List App. Remember your TODO list app? [From Week 12](../../../../week12/3-saturday/class/exercise2/README.md)? ಠ_ಠ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
