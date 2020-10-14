@@ -1,0 +1,1 @@
+# This is a demo of just using Sequelize to connect to a DB - plus using DOT env file.
