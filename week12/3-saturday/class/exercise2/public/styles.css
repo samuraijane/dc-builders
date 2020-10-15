@@ -15,19 +15,6 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-.logo {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    max-width: 500px;
-    padding: 1.5rem 0;
-    align-items: center;
-}
-
-.main {
-    padding: 20px;
-}
-
 form {
     background-color: #FFFFFF;
     padding: 15px;
