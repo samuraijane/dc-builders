@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "billy",
+    "password": "123inland",
+    "database": "DC_Merch",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "billy",
+    "password": null,
+    "database": "DC_Merch_Test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "billy",
+    "password": null,
+    "database": "DC_Merch_Prod",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
