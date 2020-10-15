@@ -9,7 +9,7 @@ const db = require('./models'); //call out a folder..looks for index.js first
 // .then(() => {console.log("Database connected")})
 // .catch((err) => {console.log(err)});
 
-db.sequelize.sync(); //LOOK THIS UP
+db.sequelize.sync(); //connects to database and creates the table.... LOOK THIS UP
 
 // THIS IS MY EXPRESS CONFIGURATION
 app.use(bodyParser.json()); //how to use middleware
