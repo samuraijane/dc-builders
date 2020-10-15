@@ -6,11 +6,11 @@ const productRouter = require('./router/product')
 const db = require('./models')
 
 // This is my seqeuelize test
-db.sequelize.authenticate().then( () => {
-    console.log("Database connected")
-}).catch( () => {
-    console.log("There was an error")
-})
+// db.sequelize.authenticate().then( () => {
+//     console.log("Database connected")
+// }).catch( () => {
+//     console.log("There was an error")
+// })
 
 db.sequelize.sync()
 
