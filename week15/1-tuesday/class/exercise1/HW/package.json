@@ -4,10 +4,9 @@
   "description": "",
   "main": "todo.js",
   "scripts": {
-    "start": "node todo.js",
-    "dev": "nodemon todo.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-  
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
