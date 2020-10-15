@@ -1,16 +1,15 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 const Sequelize = require('sequelize');
 const { toDo } = require('./models');
-
-var app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-app.use(express.static(__dirname + "/public"))
-
+const app = express();
 const todoRouter = require('./router/todo')
 const db = require('./models')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname + "/public"))
+app.use('/api', todoRouter)
 
 // This is my seqeuelize test
 // db.sequelize.authenticate().then( () => {
@@ -21,8 +20,9 @@ const db = require('./models')
 
 db.sequelize.sync()
 
-// app.use('/api', todoRouter)
-
+app.listen(3000, function(){
+    console.log('Todo List API is now listening on port 3000...');
+})
 
 
 
@@ -98,6 +98,3 @@ db.sequelize.sync()
 //     res.send("Deleted this item")
 // })
 
-app.listen(3000, function(){
-    console.log('Todo List API is now listening on port 3000...');
-})
