@@ -5,6 +5,8 @@ $().ready(()=> {
 //Selectors
 document.querySelector('form').addEventListener('submit', handleSubmitForm);
 document.querySelector('ul').addEventListener('click', handleClickDeleteOrCheck);
+
+
 //Event Handlers
 function handleSubmitForm(e) {
     e.preventDefault();
@@ -12,6 +14,14 @@ function handleSubmitForm(e) {
     if (input.value != '')
         addTodo(input.value);
     input.value = '';
+}
+
+function handleClickDeleteOrCheck(e) {
+    if (e.target.name == 'checkButton')
+        checkTodo(e);
+
+    if (e.target.name == 'deleteButton')
+        deleteTodo(e);
 }
 
 //Helpers
