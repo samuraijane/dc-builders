@@ -24,11 +24,20 @@ router.put('/products/:id', async (req, res)=>{
     const productId = parseInt(req.params.id)
     const product = await db.product.findByPk(productId)
 
+    // Check if product exists
     if(product) {
-        product.cost = req.body.cost
-        product.sale = req.body.sale
-        await product.save()
-        res.send(product)
+
+        // update the affected product with the whole of req.body
+        const productUpdates = await db.product.update(req.body, {
+            where: {
+                id: productId
+            },
+            returning: true
+        })
+
+        // check the doc to figure out the return type from Model.update
+        // https://sequelize.org/master/class/lib/model.js~Model.html#static-method-update
+        res.send(productUpdates[1][0])
     } else {
         res.status(404).send("Product does not exist")
     }
