@@ -28,6 +28,7 @@ function handleClickDeleteOrCheck(e) {
 function addTodo(todo) {
     let ul = document.querySelector('ul');
     let li = document.createElement('li');
+
     li.innerHTML = `
         <span class="todo-item">${todo}</span>
         <button name="checkButton"><i class="fas fa-check-square"></i></button>
@@ -37,6 +38,17 @@ function addTodo(todo) {
     ul.appendChild(li);
 }
 
+function checkTodo(e) {
+    let item = e.target.parentNode;
+    if (item.style.textDecoration == 'line-through')
+        item.style.textDecoration = 'none';
+    else
+        item.style.textDecoration = 'line-through';
+}
 
+function deleteTodo(e) {
+    let item = e.target.parentNode;
+    item.remove(); 
+}
 
 })
