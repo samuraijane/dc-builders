@@ -1,6 +1,7 @@
 console.log("Hello World")
 $().ready(()=> {
     // fetch('localhost:3000/api/')
+    
 //Selectors
 document.querySelector('form').addEventListener('submit', handleSubmitForm);
 
