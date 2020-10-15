@@ -10,7 +10,7 @@ router.get('/products', async (req, res) => {
 
 router.get('/products/:id', async (req, res) => {
     const productId = parseInt(req.params.id)
-    const product = await db.prodcut.findByPk(productId)
+    const product = await db.product.findByPk(productId)
     console.log(product);
 
     if(product) {
