@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "elijah_to_do",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "database_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "database_production",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
