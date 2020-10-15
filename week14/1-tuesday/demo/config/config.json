@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "anna",
+    "username": "bens.varnum",
     "password": null,
-    "database": "database_development",
+    "database": "library",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "anna",
+    "username": "root",
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "anna",
+    "username": "root",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
