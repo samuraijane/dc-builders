@@ -5,6 +5,8 @@ $().ready(()=> {
 //Selectors
 document.querySelector('form').addEventListener('submit', handleSubmitForm);
 document.querySelector('ul').addEventListener('click', handleClickDeleteOrCheck);
+document.getElementById('clearAll').addEventListener('click', handleClearAll);
+
 
 
 //Event Handlers
@@ -23,6 +25,11 @@ function handleClickDeleteOrCheck(e) {
     if (e.target.name == 'deleteButton')
         deleteTodo(e);
 }
+
+function handleClearAll(e) {
+    document.querySelector('ul').innerHTML = '';
+}
+
 
 //Helpers
 function addTodo(todo) {
