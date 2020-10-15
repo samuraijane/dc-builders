@@ -1,5 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+const Sequelize = require('sequelize');
+const { toDo } = require('./models');
 
 var app = express();
 app.use(bodyParser.json());
@@ -7,90 +9,94 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(__dirname + "/public"))
 
-var todoList = [
-    {
-        id: 1,
-        todo: "Implement a REST API"
-    },
-    {
-        id: 2,
-        todo: "Get Groceries"
-    }
-];
+const todoRouter = require('./router/todo')
+const db = require('./models')
 
-let autoIncrement = 3
+// This is my seqeuelize test
+// db.sequelize.authenticate().then( () => {
+//     console.log("Database connected")
+// }).catch( () => {
+//     console.log("There was an error")
+// })
 
-// GET /api/todos
-app.get('/api/todos', (req, res) => {
-    res.send(todoList)
-})
+db.sequelize.sync()
 
-// GET /api/todos/:id
-app.get('/api/todos/:id', (req, res) => {
+// app.use('/api', todoRouter)
 
-    // This could just as easily be find
-    let result = todoList.filter( (todoItem) => {
-        return todoItem.id === parseInt(req.params.id)
-    })
 
-    if (result.length === 1) {
-        res.send(result[0])
-    } else if (result.length === 0) {
-        res.status(404).send("todo list item doesn't exist")
-    } else {
-        res.status(500).send("The server had an error: to many todos")
-    }
-})
 
-// POST /api/todos
-app.post('/api/todos', (req, res) => {
-    // console.log(req.body)
-    // console.log(typeof req.body)
 
-    let newItem = req.body
-    newItem["id"] = autoIncrement++
+// // GET /api/todos
+// app.get('/api/todos', (req, res) => {
+//     res.send(todoList)
+// })
 
-    todoList.push(newItem)
+// // GET /api/todos/:id
+// app.get('/api/todos/:id', (req, res) => {
 
-    res.send(newItem)
-})
+//     // This could just as easily be find
+//     let result = todoList.filter( (todoItem) => {
+//         return todoItem.id === parseInt(req.params.id)
+//     })
 
-// PUT /api/todos/:id
-app.put('/api/todos/:id', (req, res) => {
-    // console.log(req.body)
-    // console.log(req.params.id)
+//     if (result.length === 1) {
+//         res.send(result[0])
+//     } else if (result.length === 0) {
+//         res.status(404).send("todo list item doesn't exist")
+//     } else {
+//         res.status(500).send("The server had an error: to many todos")
+//     }
+// })
 
-    // This way is much cleaner than what we did in class
-    let itemIndex = todoList.findIndex( (todoItem) => {
-        return todoItem.id === parseInt(req.params.id)
-    }) 
+// // POST /api/todos
+// app.post('/api/todos', (req, res) => {
+//     // console.log(req.body)
+//     // console.log(typeof req.body)
 
-    if(itemIndex >= 0) {
-        // Overwrite the id in the body with the one from the URL
-        req.body.id = todoList[itemIndex].id
-        todoList[itemIndex] = req.body  
-        res.send(todoList[itemIndex])
-    } else {
-        res.status(404).send("Item does not exist") 
-    }
-})
+//     let newItem = req.body
+//     newItem["id"] = autoIncrement++
 
-// DELETE /api/todos/:id
-app.delete('/api/todos/:id', (req, res) => {
-    let originalLength = todoList.length
+//     todoList.push(newItem)
 
-    todoList = todoList.filter( (todoItem) => {
-        return todoItem.id !== parseInt(req.params.id)
-    })
+//     res.send(newItem)
+// })
 
-    console.log(todoList)
+// // PUT /api/todos/:id
+// app.put('/api/todos/:id', (req, res) => {
+//     // console.log(req.body)
+//     // console.log(req.params.id)
 
-    if (todoList.length === originalLength){
-        res.send("Item already removed")
-    }
+//     // This way is much cleaner than what we did in class
+//     let itemIndex = todoList.findIndex( (todoItem) => {
+//         return todoItem.id === parseInt(req.params.id)
+//     }) 
 
-    res.send("Deleted this item")
-})
+//     if(itemIndex >= 0) {
+//         // Overwrite the id in the body with the one from the URL
+//         req.body.id = todoList[itemIndex].id
+//         todoList[itemIndex] = req.body  
+//         res.send(todoList[itemIndex])
+//     } else {
+//         res.status(404).send("Item does not exist") 
+//     }
+// })
+
+// // DELETE /api/todos/:id
+// app.delete('/api/todos/:id', (req, res) => {
+//     let originalLength = todoList.length
+
+//     todoList = todoList.filter( (todoItem) => {
+//         return todoItem.id !== parseInt(req.params.id)
+//     })
+
+//     console.log(todoList)
+
+//     if (todoList.length === originalLength){
+//         res.send("Item already removed")
+//     }
+
+//     res.send("Deleted this item")
+// })
 
 app.listen(3000, function(){
     console.log('Todo List API is now listening on port 3000...');

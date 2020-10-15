@@ -2,7 +2,7 @@
   "development": {
     "username": "elijah",
     "password": "tempword",
-    "database": "elijah_to_do",
+    "database": "another-to-do",
     "host": "localhost",
     "dialect": "postgres"
   },
