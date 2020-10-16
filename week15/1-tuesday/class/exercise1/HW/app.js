@@ -7,13 +7,13 @@ const todo = require('./router/todo')
 
 const db = require('./models')
 
-db.sequelize.authenticate()
-    .then( () => {
-        console.log("Database connected")
-    }) 
-    .catch( () =>{
-        console.log("Database not connected!!!")
-    })
+// db.sequelize.authenticate()
+//     .then( () => {
+//         console.log("Database connected")
+//     }) 
+//     .catch( () =>{
+//         console.log("Database not connected!!!")
+//     })
 
 db.sequelize.sync()
 
