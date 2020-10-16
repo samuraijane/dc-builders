@@ -6,8 +6,7 @@ const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
-const pgp = require('pg-promise')();
-const db = pgp('postgres://billy:123inland@localhost:5432/DC_Merch');
+const db = {};
 
 let sequelize;
 if (config.use_env_variable) {
@@ -15,6 +14,9 @@ if (config.use_env_variable) {
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
+
+
+
 
 fs
   .readdirSync(__dirname)
@@ -24,12 +26,8 @@ fs
   .forEach(file => {
     const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
     db[model.name] = model
-    try{
-    console.log("working")
-    }catch(err){
-    console.error(err)
 }
-  });
+  );
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {

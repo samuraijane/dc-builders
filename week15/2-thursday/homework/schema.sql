@@ -4,7 +4,7 @@ CREATE TABLE orders (
     product_quantity INTEGER,
     product_description varchar(50),
     payment_type varchar(50),
-    customer_name varchar(50),
+    customer_id varchar(50),
     createdAt DATE,
     updatedAt DATE
 );
