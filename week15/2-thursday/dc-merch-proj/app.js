@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const productRouter = require('./router/product');
+const orderRouter = require('./router/order');
 const db = require('./models'); //call out a folder..looks for index.js first
 
 // THIS IS MY SEQUELIZE TEST
@@ -14,6 +15,7 @@ db.sequelize.sync(); //connects to database and creates the table.... LOOK THIS 
 // THIS IS MY EXPRESS CONFIGURATION
 app.use(bodyParser.json()); //how to use middleware
 app.use('/api', productRouter);
+app.use('/api', orderRouter);
 
 
 app.listen(3000, () => {

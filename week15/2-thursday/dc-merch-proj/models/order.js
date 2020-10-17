@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // models.Order.hasOne(models.Product); //create binding in both directions, always come in pairs (need both ways)
-      // models.Product.belongsToMany(models.Order);
+      models.Order.hasOne(models.Product); //create binding in both directions, always come in pairs (need both ways)
+      models.Product.belongsTo(models.Order);
     }
   };
   Order.init({

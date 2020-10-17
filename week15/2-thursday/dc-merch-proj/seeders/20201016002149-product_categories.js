@@ -21,11 +21,7 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('productCategory', { name: "Hardware" }, {}); //this wouldn't work if we had multiple multiple screwdrivers
+    await queryInterface.bulkDelete('productCategory', { name: "Apparel" }, {});
   }
 };
