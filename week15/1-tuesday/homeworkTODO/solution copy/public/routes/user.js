@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+// const db = require("../models");
 router.get("/messages", (req, res) => {
   console.log("show me messages");
   res.end();
@@ -71,6 +72,15 @@ router.put("/api/todos/:id", (req, res) => {
     res.status(404).send("Item does not exist");
   }
 });
+router.get("/api/todos/:id", async (req, res) => {
+  const taskId = parseInt(req.params.id);
+  const task = await db.task.findByPk(taskId);
+  if (task) {
+    res.send(task);
+  } else {
+    res.status(404).send("task does not exist, please enter correct ID");
+  }
+});
 
 // DELETE /api/todos/:id
 router.delete("/api/todos/:id", (req, res) => {
@@ -87,6 +97,28 @@ router.delete("/api/todos/:id", (req, res) => {
   }
 
   res.send("Deleted this item");
+});
+
+router.put("/api/todos/:id", async (req, res) => {
+  const taskId = parseInt(req.params.id);
+  const task = await db.task.findByPk(taskId);
+  if (task) {
+    task.name = req.body.name;
+    task.date = req.body.date;
+    task.completed = req.body.completed;
+    await task.save();
+    res.send(task);
+  } else res.status(404).send("task does not exist, please enter correct task");
+});
+
+router.post("/api", async (req, res) => {
+  const { name, date, completed } = req.body;
+  const newTask = await db.task.create({
+    name,
+    date,
+    completed,
+  });
+  res.send("challenge accepted");
 });
 
 module.exports = router;
