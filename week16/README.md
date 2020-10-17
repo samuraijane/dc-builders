@@ -1,4 +1,4 @@
-# Phase 2 - Full Stack Project Requirements (TENTATIVE as of 10/11/20)
+# Phase 2 - Full Stack Project Requirements (TENTATIVE as of 10/16/20)
 
 ## Description
 
@@ -14,7 +14,12 @@
 1. Use sequelize for ORM.
 1. All database changes have to be schema migrations with Sequelieze.
 1. Your server should serve a website that users can interact with (user actions should trigger CRUD operations)
-1. Must have PassportJS Local Strategy for authentication
+1. Must have PassportJS Local Strategy for authentication OR Incorporate ONE the following into your backend:
+    1. Twitter
+    1. Facebook
+    1. Google
+    1. GitHub
+    1. or any other OAuth Provider
 1. Include a descriptive README with the following:
     1. Project purpose (sales pitch)
     1. Hosted Location
@@ -22,19 +27,13 @@
         1. How to build/run/test project
         1. Technologies used
     1. Team information
-1. Incorporate ONE the following into your backend:
-    1. Twitter
-    1. Facebook
-    1. Google
-    1. GitHub
-    1. or any other OAuth Provider
 1. Optionally, incorporate one of the following too:
     1. Socket.io
     1. EJS
     1. A node module of your choice (run it by your instructor first though...)
 1. Format code use a code linter/formating tool.
 1. Break different parts of the code into different files / modules.
-1. Deploy your project to Netlify (easy mode) or Amazon AWS (hard mode)
+1. Deploy your project to Heroku, Glitch + ElephantSQL (easy mode) or Amazon AWS (hard mode)
 
 
 ### OPTIONAL BUT ENCOURAGED:
