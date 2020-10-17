@@ -42,7 +42,7 @@ passport.use(new GitHubStrategy({
   function(accessToken, refreshToken, profile, cb) {
       console.log(JSON.stringify(profile))
 
-    //YOUR CODE HERE
+    //YOUR database CODE HERE
 
     //Tells passport to move on
     cb(null, profile)
