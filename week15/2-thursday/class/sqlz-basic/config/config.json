@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "dcmerch",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "dcmerch",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "elijah",
+    "password": "tempword",
+    "database": "dcmerch",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
