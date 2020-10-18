@@ -25,6 +25,7 @@
 
 
 ## Homework
+1. [Sign up for Heroku - free tier](https://signup.heroku.com/)
 1. Exercise 1: [Simple Login App](../class/exercise1/README.md)
 1. Start thinking about what your [Phase 2 Project (Requirement *TENTATIVE*)](../../../week16-17/phase2_project/README.md):
     1. What will your project be?

@@ -15,10 +15,12 @@
 1. Career Prep Sessions - 11/12/20 + 11/14/20
 
 ## References
-1. [Heroku Node.js Setup Docs](TBD)
+1. [Heroku Node.js Setup Docs](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 1. [Github Action QuickStart](https://docs.github.com/en/free-pro-team@latest/actions/quickstart)
 1. [Github Actions with Node.js](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-nodejs)
 1. [Github Actions and Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks)
+1. [Using Secrets in GH Actions](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets)
+1. [Deploy to Heroku Action](https://github.com/marketplace/actions/deploy-to-heroku)
 
 ## Homework
 1. Begin working on your [Phase 2 Project](../phase2_project/README.md):
