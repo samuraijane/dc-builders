@@ -1,10 +1,10 @@
-# Phase 2 - Full Stack Project Requirements (TENTATIVE as of 10/16/20)
+# Phase 2 - Full Stack Project Requirements
 
 ## Description
 
 1. Your task is to form into teams and build a full-stack application that utilizes Express and Postgres
 1. This project will focus more on the back-end content we've been covering, so having a simple user interface is totally fine! (In fact, it's encouraged...)
-1. Each team will present their project on XXXXX
+1. Each team will present their project on **Thursday November 5th, 2020**.
     1. Presentations should be no longer than 10 minutes
 
 ## Technical Requirements 
@@ -38,20 +38,19 @@
 
 ### OPTIONAL BUT ENCOURAGED:
 
-1. Your repo must be connected to Travis CI or GitHub Actions:
-    1. You must have at least one test of an API endpoint that touches the database
-    1. This tutorial might be helpful: Test Driven Development with Node
+1. Connect your repo to Travis CI or GitHub Actions:
+    1. Test as least one API endpoint that touches the database
+    1. Lint and Test every pull request and block merging if tests do not pass
     1. Put a build status badge in your README.md that links to your latest build
-    1. You can even test for code style.
-1. You must use some form of HTML templating
+1. You can use some form of HTML templating:
     1. Pure JavaScript functions that return strings, or use template literals 
-    1. mustache, handlebars, ejs, pug, etc
+    1. Mustache, handlebars, ejs, pug, etc
 
 ## Workflow Requirements
 
 1. Create one github repo (add all group members as collaborators)
 1. Collaborate using PRs (Pull Requests), making sure to tag a reviewer for approval
-    1. Don't commit anything directly to the `develop` branch (remote or local); *you should explicitly disallow this for all team members*
+    1. Don't commit anything directly to the `develop` branch (remote or local); **you should explicitly disallow this for all team members**
     1. Instead, work on a branch of `develop` and merge your work in through Github Pull Requests
     1. Have other teammates be Reviewers for you pull requests
     1. See the suggested PR rejection criteria below
