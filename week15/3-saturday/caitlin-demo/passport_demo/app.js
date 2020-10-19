@@ -6,9 +6,9 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
-const { Sequelize, DataTypes, Model } = require('sequelize');
-const { Router } = require('express');
+const { Sequelize } = require('sequelize');
 const User = require('./models/user');
+const authRouter = require('./router/auth');
 
 // SETTING UP SEQUELIZE
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
@@ -17,7 +17,7 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
   });
 
 // CALLING THE MODEL & CREATING THE TABLE
-let db = {};
+let db = {}; //create an empty object to put instance of User in it
 db.User = User(sequelize); //model returns a function so calling it here to get object with user
 sequelize.sync(); //create table
 
@@ -70,8 +70,12 @@ app.use(session({
     }
 ))
 
+// ATTACHING PASSPORT
 app.use(passport.initialize());
 app.use(passport.session());
+
+//ATTACHING 3 AUTH ROUTES
+app.use(authRouter);
 
 passport.serializeUser(function(user, done) {
     //What goes INTO the session here; right now it's everything in User
@@ -81,20 +85,6 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(id, done) {
     done(null, id);
     //This is looking up the User in the database using the information from the session "id"
-});
-
-//GITHUB CALLBACK URL
-app.get('/auth/github/callback', passport.authenticate('github', {failureRedirect: '/'}), (req, res) => {
-    res.redirect('/loggedIn.html');
-})
-
-//ROUTE CALLED WHEN WANT TO LOGIN
-app.get('/auth/github', passport.authenticate('github'));
-
-//ROUTE CALLED WHEN WANT TO LOGOUT
-app.get('/logout', (req, res) => {
-    req.logout();
-    res.redirect('/');
 });
 
 // NEW! Didn't cover this in class 
