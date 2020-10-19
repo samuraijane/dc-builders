@@ -8,6 +8,7 @@ const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
 const { Sequelize, DataTypes, Model } = require('sequelize');
 const { Router } = require('express');
+const User = require('./models/user');
 
 // SETTING UP SEQUELIZE
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
@@ -15,34 +16,11 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     dialect: 'postgres'
   });
 
-//MAKE A MODEL FOR DATABASE
-class User extends Model {}
+// CALLING THE MODEL & CREATING THE TABLE
+let db = {};
+db.User = User(sequelize); //model returns a function so calling it here to get object with user
+sequelize.sync(); //create table
 
-User.init({
-  // Model attributes are defined here
-  username: {
-    type: DataTypes.STRING, //this can change. a github user can change this
-    allowNull: false
-  },
-  githubId: {
-      type: DataTypes.INTEGER, //this never changes
-      allowNull: false
-  },
-  profileUrl: {
-    type: DataTypes.STRING, //this can change
-    allowNull: false
-  }
-}, {
-  // Other model options go here
-  sequelize, // We need to pass the connection instance
-  modelName: 'User', // We need to choose the model name
-  freezeTableName: true
-});
-
-// the defined model is the class itself
-console.log(User === sequelize.models.User); // true
-
-sequelize.sync(); //doesn't run migrations or update table. just creates one
 
 // SETTING UP PASSPORT AND THE PASSPORT STRATEGY
 passport.use(new GitHubStrategy({
@@ -64,11 +42,11 @@ passport.use(new GitHubStrategy({
     
     // YOUR DB CODE HERE
     // 3. Use the model here - store the use info
-    let user = await User.findOne({where: { githubId: parseInt(profile.id) }})
+    let user = await db.User.findOne({where: { githubId: parseInt(profile.id) }})
 
     if(!user) {
       // User doesn't exist - make a new database entry
-      user = User.build({ //need user.save() because User.build() does not automatically create entry in table -- build() doesn't actually even talk to the database. it isn't async like most of the other methods. the build method only creates an object that represents data that can be mapped to a database.
+      user = db.User.build({ //need user.save() because User.build() does not automatically create entry in table -- build() doesn't actually even talk to the database. it isn't async like most of the other methods. the build method only creates an object that represents data that can be mapped to a database.
         username: profile.username,
         githubId: parseInt(profile.id),
         profileUrl: profile.profileUrl
@@ -104,8 +82,6 @@ passport.deserializeUser(function(id, done) {
     done(null, id);
     //This is looking up the User in the database using the information from the session "id"
 });
-
-//where can I call req.user
 
 //GITHUB CALLBACK URL
 app.get('/auth/github/callback', passport.authenticate('github', {failureRedirect: '/'}), (req, res) => {
