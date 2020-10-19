@@ -15,7 +15,7 @@
 
 ## Homework
 1. Complete Exercise 1: [TODO List Backend](../class/exercise1/README.md)
-1. Start thinking about what your [Phase 2 Project (Requirement *TENTATIVE*)](../../../week16/README.md):
+1. Start thinking about what your [Phase 2 Project (Requirement *TENTATIVE*)](../../../week16-17/phase2_project/README.md):
     1. Who do you want on your team?
     1. What will your project be?
 
