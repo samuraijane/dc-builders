@@ -16,6 +16,7 @@
     "nodemon": "^2.0.5",
     "passport": "^0.4.1",
     "passport-github": "^1.1.0",
+    "path": "^0.12.7",
     "pg": "^8.4.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5"

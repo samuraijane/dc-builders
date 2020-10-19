@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const passport = require("passport");
+const path = require("path");
 const GitHubStrategy = require("passport-github").Strategy;
 const { Sequelize } = require("sequelize");
 
@@ -89,9 +90,13 @@ app.get("/logout", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`<h1>Hello world from server</h1>
-    <h2>Session</h2>
-    <pre>${JSON.stringify(req.session, null, "\t")}</pre>`);
+  //   res.sendFile(path.join(__dirname + "/index.html"));
+  // });
+
+  res.send(`<h1 id="loggedIn"></h1>
+  <form id="gitLog"><button type="submit">Login with Github</button></form>
+  <button>Logout</button>
+  <pre>${JSON.stringify(req.session, null, "\t")}</pre>`);
 });
 
 app.listen(process.env.PORT, () => {
