@@ -5,6 +5,12 @@ const bodyParser = require('body-parser');
 const productRouter = require('./router/product')
 const db = require('./models')
 
+
+// THIS IS MY EXPRESS CONFIGURATION
+app.use(bodyParser.json())
+
+app.use('/api', productRouter)
+
 // THIS IS MY SEQUELIZE TEST
 // db.sequelize.authenticate().then( ()=> {
 //     console.log("Database connected")
@@ -14,11 +20,9 @@ const db = require('./models')
 
 db.sequelize.sync()
 
-// THIS IS MY EXPRESS CONFIGURATION
-app.use(bodyParser.json())
-
-app.use('/api', productRouter)
 
 app.listen(3000, ()=> {
     console.log('server is started')
 })
+
+//killall -9 node

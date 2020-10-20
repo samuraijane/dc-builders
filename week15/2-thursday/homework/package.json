@@ -6,14 +6,12 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:create" : "createdb DC_Merch",
-    "db:destroy" : "dropdb DC_Merch",
-    "db:init" : "psql -f schema.sql",
-    "db:seed" : "psql -f seed.sql",
-    "db:reset" : "npm run db:destroy; npm run db:create && npm run db:init && npm run db:seed"
-
+    "db:create": "createdb DC_Merch",
+    "db:destroy": "dropdb DC_Merch",
+    "db:init": "psql -f schema.sql",
+    "db:seed": "psql -f seed.sql",
+    "db:reset": "npm run db:destroy; npm run db:create && npm run db:init && npm run db:seed"
   },
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
