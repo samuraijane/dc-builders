@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "carl",
-    "password": "walkingdead",
-    "database": "DCMerch",
-    "host": "localhost",
+    "username": "danielgallagher",
+    "password": null,
+    "database": "walkthrough",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {

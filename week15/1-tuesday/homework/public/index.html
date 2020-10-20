@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Our TODO List</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Awesome TODO List</h1>
+
+    <form id="new-todo">
+        <label>Create a New Todo</label>
+        <input id="new-todo-text" type="text" placeholder="Your TODO Here" name="todo" />
+        <button type="submit">Add</button>
+    </form>
+
+    <ul id="todo-container">
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
