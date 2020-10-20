@@ -84,7 +84,7 @@ passport.use(new GitHubStrategy({
         })
       }
       // Tells passport to move on
-      cb(null, user)
+      cb(null, profile)
     }
   ));
 
@@ -121,9 +121,9 @@ app.get('/logout', (req, res) => {
 // Homepage
 app.get('/', (req, res) => {
     res.send(`<h1>Hello world from server</h1>
-    <a href="./auth/github">Login</a>
+    <a href="./auth/github"><button>Login</button></a>
     <br />
-    <a href="./logout">Logout</a>
+    <a href="./logout"><button>Logout</button></a>
     <h2>Session</h2>
     <pre>${JSON.stringify(req.session, null, '\t')}</pre>
     <h2>Req.user</h2>
