@@ -130,6 +130,7 @@ app.get('/', (req, res) => {
     <pre>${JSON.stringify(req.user, null, '\t')}</pre>`)
 })
 
+
 // NEW! Didn't cover this in class 
 // How can we make sure that someone is logged in to see a page?
 // We make our own middleware we can add to our routes.
