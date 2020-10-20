@@ -24,19 +24,20 @@
 1. [Deploy to Heroku Action](https://github.com/marketplace/actions/deploy-to-heroku)
 
 ## Homework
-1. Begin working on your [Phase 2 Project](../phase2_project/README.md):
-    1. What will your project be? Need to get approval from Dan.
-    1. What is your team name?
+1. Come to class with questions for review Thursday-Friday.
 
 
 ## Notes:
 
 Deployment steps
 1. Make a new Git project, clone
+1. Make a Local ENV file
 1. Get rid of extraneous logs
+1. Modify Package.json
 1. Heroku create 
 1. Heroku create postgres addon
 1. Heroku create secrets
 1. Heroku push
 
 Github Deploy steps
+1. We'll work through this in class
