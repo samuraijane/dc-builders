@@ -1,6 +1,6 @@
 # Week 16 – Tuesday, Full Stack Deployment and CI/CD
 
-![Frankenstein It's Alive](https://media.giphy.com/media/vmv47p4zksWDC/giphy.gif)
+![It's alive](https://media.giphy.com/media/3oEjI6hkw6nbYNQkz6/giphy.gif)
 
 ## Agenda
 1. Review Homeworks: 
