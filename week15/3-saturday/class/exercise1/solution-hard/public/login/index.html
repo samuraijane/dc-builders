@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Logout of DC Demo</title>
+        <style>
+            .centered {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* https://saruwakakun.com/en/css3-buttons */
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                font-family: helvetica;
+                font-size: 54px;
+                color: #FFF;
+                width: 500px;
+                height: 500px;
+                line-height: 500px;
+                border-radius: 50%;
+                text-align: center;
+                vertical-align: middle;
+                overflow: hidden;
+                background-image: -webkit-linear-gradient(45deg, #709dff 0%, #91fdb7 100%);    
+                background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+                transition: .4s;
+            }
+
+            .btn:hover{
+                -webkit-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                transform: rotate(10deg);
+            }               
+        </style>
+    </head>
+    <body>
+        <div class="centered">
+            <a href="../auth/github" class="btn">Login with GITHUB</a>
+        </div>
+    </body>
+</html>
