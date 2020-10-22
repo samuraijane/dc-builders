@@ -16,7 +16,7 @@
 1. N/A
 
 ## References
-1. [Dan's Full Stack TODO List]()
+1. [Dan's Full Stack TODO List](https://github.com/DanStough/tiger-king-todo)
 1. [Express Sessions](https://www.npmjs.com/package/express-session)
 1. [Connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 1. [Passport.js](http://www.passportjs.org/)
