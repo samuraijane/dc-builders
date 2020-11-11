@@ -31,6 +31,7 @@
     1. Socket.io
     1. EJS
     1. A node module of your choice (run it by your instructor first though...)
+1. Your app should be responsive enough to be usable on mobile device (cell or tablet)
 1. Format code use a code linter/formating tool.
 1. Break different parts of the code into different files / modules.
 1. Deploy your project to Heroku, Glitch + ElephantSQL (easy mode) or Amazon AWS (hard mode)
@@ -75,8 +76,9 @@ Though the project is pass fail, the following rubric will be used to provide fe
 |   | Overall Requirements                                                                                                     | Score  (1-5, 5  is excellent) | Instructor Comments |
 |---|--------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|
 | 1 | Project README is thoroughly documents with project information (both technical and persuasive).                         |                               |                     |
-| 2 | Presentation: Each team member has presented. Teams delivers both an effective and professional sales + technical pitch. |                               |                     |
-| 3 | Hosted project is complete (as-advertised) and bug-free.                                                                 |                               |                     |
-| 4 | Projects meets technical requirements laid out in the requirements README                                                |                               |                     |
-| 5 | Project Team met Workflow requirements laid out in the requirements README                                               |                               |                     |
-
+| 2 | The application is easy to use on a mobile device (e.g. iPhone11)                                                        |                               |                     |
+| 3 | Presentation: Each team member has presented. Teams delivers both an effective and professional sales + technical pitch. |                               |                     |
+| 4 | Hosted project is complete (as-advertised) and bug-free.                                                                 |                               |                     |
+| 5 | Projects meets technical requirements laid out in the requirements README                                                |                               |                     |
+| 6 | Project Team met Workflow requirements laid out in the requirements README                                               |                               |                     |
+| 7 | Project originality -> went above and beyond technical requirements, tried new things and had fun.                       |                               |                     |
