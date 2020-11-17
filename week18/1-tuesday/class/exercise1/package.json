@@ -1,0 +1,15 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "For each of the following word problems, your mission is to code a JavaScript function that performs the desired action using the Test Drive Development (TDD) workflow we reviewed in class. Write a test first, then try to write the function.",
+  "main": "staceysLeapYear.js",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "S. Graham",
+  "license": "ISC"
+}
