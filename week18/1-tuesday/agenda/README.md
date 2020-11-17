@@ -21,6 +21,7 @@
 ## References
 1. [Jest Docs](https://jestjs.io/docs/en/getting-started)
 1. [TDD Description Free Code Camp](https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/)
+1. [FizzBuzz Coding Exercise](https://codingdojo.org/kata/FizzBuzz/)
 
 
 ## Homework
