@@ -15,8 +15,9 @@ Write a funciton that returns a boolean indicating if a given year is a Leap yea
 Example inputs:
 * `2001` -> Not a leap year
 * `2004` -> Leap Year
-* `2000` -> No a Leap Year
-* `2020` -> Not a Leap Year
+* `2000` -> A Leap Year
+* `2100` -> Not a Leap Year
+* `2400` -> Leap Year
 
 ## Problem 2 - Days in the Month Calculator
 
