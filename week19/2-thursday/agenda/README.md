@@ -6,9 +6,11 @@
 ## Agenda
 1. Review - React Components
 1. Passing Data to Components
+    1. Tour of React Dev Tools
     1. Micro-lecture: Passing data to components 
     1. Demo: `props` in action.
 1. [Exercise 1: Passing data to components](../class/exercise1/README.md)
+1. Can we some buttons?
 
 ## Announcements
 1. Thanksgiving Break -> NO CLASS 11/26 and 11/28
@@ -16,6 +18,8 @@
 ## Learning Objectives
 1. Learn to use JS expressions in JSX.
 1. Learn how to customize instances of a React Component with `props`.
+1. Learn how to use `map` to render multiple of items
+1. Learn how to do conditional rendering.
 1. How to render components inside other components.
 1. Learn how to create a React component using JS Classes.
 1. Learn why we need `state` in React components to re-rendered object.
