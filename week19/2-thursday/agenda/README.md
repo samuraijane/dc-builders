@@ -14,6 +14,7 @@
 1. Thanksgiving Break -> NO CLASS 11/26 and 11/28
 
 ## Learning Objectives
+1. Learn to use JS expressions in JSX.
 1. Learn how to customize instances of a React Component with `props`.
 1. How to render components inside other components.
 1. Learn how to create a React component using JS Classes.
