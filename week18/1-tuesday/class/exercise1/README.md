@@ -21,7 +21,7 @@ Example inputs:
 
 ## Problem 2 - Days in the Month Calculator
 
-Write a function that takes in the name of a month and the year, then returns the number of days in that month. Take leap years into consideration. Years and months are both provided in integers
+Write a function that takes in the name of a month and the year, then returns the number of days in that month. Take leap years into consideration. Years and months are both provided in integers. Months are indexed starting at 1.
 
 Example inputs:
 * `1`, `2001` -> January 2001 had 31 days
@@ -50,10 +50,9 @@ A broad summary of bowling rules:
 
 Example inputs:
 
-* `['1', '1', '1', '1', '1', '1', '1', '1', '1', '1']` 1 pin each frame (score = 10)
-* `['/', '5', '0', '0', '0', '0', '0', '0', '0', '0',]` One spare and one 5 (score = 20)
-* `['X', '5', '5', '0', '0', '0', '0', '0', '0', '0',]` One spare and one 5 (score = 30)
+* `['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']` 1 pin each frame and shot (score = 20)
+* `['1', '/', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']` One spare and one 6 (score = 22)
+* `['X', '5', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']` One strike a five and a 3 (score = 26)
 * `['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']` Strike each frame (score = 300)
-* `['W', '5', '0', '0', '0', '0', '0', '0', '0', '0',]` Invalid!!
 
 
