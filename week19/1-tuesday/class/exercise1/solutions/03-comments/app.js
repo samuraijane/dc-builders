@@ -1,17 +1,25 @@
 let ProfilePic = () => {
-    return <span>Make this component render an image</span>
+    return <img src="https://media-exp1.licdn.com/dms/image/C5603AQHxSAhLfdhRZg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=WZIEOS3jds4NzgvqtPqx6AyKDsm7wd4XhD1-cu4Zk_Y" />
 }
 
 let CommentBody = () => {
-    return <span>Make this component render a username in bold above the comment text</span>
+    return <span><strong>Dan Stough</strong></span>
 }
 
 let Comment = () => {
-    return <span>Make each comment render a profile picture and the comment body</span>
+    return (<div>
+        <ProfilePic />
+        <br />
+        <CommentBody />
+    </div>);
 }
 
 let Comments = () => {
-    return <span>Make this component render a list of comments</span>
+    return (<div>
+        <Comment />
+        <Comment />
+        <Comment />
+    </div>);
 }
 
 ReactDOM.render(<Comments />, document.getElementById('root'))
