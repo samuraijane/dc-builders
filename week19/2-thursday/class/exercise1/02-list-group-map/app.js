@@ -11,13 +11,22 @@ const listText = [
 ]
 
 let ListGroupItem = (props) => {
-    return (<li className="list-group-item">{props.item}</li>
+    return (<li className="list-group-item">{props.text}</li>
     );
 }
 
 let ListGroup = () => {
-    return <span>Make this Component render a handful of ListGroupItems</span>
-}
+        return (
+            <ul className="list-group">
+                <ListGroupItem text={listText[0]}/>
+                <ListGroupItem text={listText[1]}/>
+                <ListGroupItem text={listText[2]}/>
+                <ListGroupItem text={listText[3]}/>
+                <ListGroupItem text={listText[4]}/>
+            </ul>
+    );        
+};
+
 
 
 ReactDOM.render(<ListGroup />, document.getElementById('root'))
