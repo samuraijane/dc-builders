@@ -10,12 +10,24 @@ const listText = [
 ]
 
 let ListGroupItem = () => {
-    return <span>Make this component render like a Bootstrap list group item: <a href="https://getbootstrap.com/docs/4.1/components/list-group/" target="_blank">https://goo.gl/images/mY5Qdv</a></span>
+    return (
+        <div>
+            <li className="list-group-item">{listText[0]}</li>
+            <li className="list-group-item">{listText[1]}</li>
+            <li className="list-group-item">{listText[2]}</li>
+            <li className="list-group-item">{listText[3]}</li>
+            <li className="list-group-item">{listText[4]}</li>
+        </div>
+        );
 }
 
 let ListGroup = () => {
-    return <span>Make this Component render a handful of ListGroupItems</span>
+    return (
+        <ul className="list-group">
+            <ListGroupItem />
+        </ul>
+    );
 }
 
 
-ReactDOM.render(<ListGroup />, document.getElementById('root'))
+ReactDOM.render(<ListGroup />, document.getElementById('root')) 

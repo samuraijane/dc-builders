@@ -33,6 +33,8 @@ let Comments = () => {
     return (
         <div>
             <Comment />
+            <Comment />
+            <Comment />
         </div>
     );
 //<span>Make this component render a list of comments</span>

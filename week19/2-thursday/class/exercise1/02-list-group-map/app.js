@@ -3,20 +3,31 @@
 // Don't foget the key property
 
 const listText = [
-    "Cras justo odio",
-    "Dapibus ac facilisis in",
-    "Morbi leo risus",
-    "Porta ac consectetur ac",
-    "Vestibulum at eros"
+    {id: 0, text: "Cras justo odio"},
+    {id: 2, text: "Dapibus ac facilisis in"},
+    {id: 3, text: "Morbi leo risus"},
+    {id: 4, text: "Porta ac consectetur ac"},
+    {id: 5, text: "Vestibulum at eros"}
 ]
 
-let ListGroupItem = () => {
-    return <span>Make this component render like a Bootstrap list group item: <a href="https://getbootstrap.com/docs/4.1/components/list-group/" target="_blank">https://goo.gl/images/mY5Qdv</a></span>
+let ListGroupItem = (props) => {
+    return (
+        <li className='list-group-item'>{props.text}</li>
+    )
 }
 
 let ListGroup = () => {
-    return <span>Make this Component render a handful of ListGroupItems</span>
+    return (
+        <ul className='list-group'>
+            {listText.map((item) => {
+                return <ListGroupItem key={item.id} text={item.text}/>
+            })}
+        </ul>
+    )
 }
 
 
 ReactDOM.render(<ListGroup />, document.getElementById('root'))
+
+
+// (listText.map((list) => {<li className='list-group-item' key={listItems[0]}>{list}</li>)

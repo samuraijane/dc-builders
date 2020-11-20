@@ -11,9 +11,9 @@ let YesNoRadio = () => {
     return (
         <div>
             <input type="radio" id="yes" value="yes" />
-            <label for="yes">Yes</label><br />
+            <label htmlFor="yes">Yes</label><br />
             <input type="radio" id="no" value="no" />
-            <label for="no">No</label><br />
+            <label htmlFor="no">No</label><br />
         </div>
     )
     //<span>Make this component render two styled radio button side by side labelled "yes" and "no"</span>
