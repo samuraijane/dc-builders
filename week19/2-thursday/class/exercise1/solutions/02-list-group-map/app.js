@@ -12,23 +12,16 @@ const listText = [
 ];
 
 let ListGroupItem = (props) => {
-    return (
-        <li className='list-group-item'>{props.text}</li>
-    )
+    return <li className="list-group-item">{props.text}</li>
 }
 
 let ListGroup = () => {
     return (
-        <ul className='list-group'>
-            {listText.map((item) => {
-                return <ListGroupItem key={item.id} text={item.text}/>
-            })}
+        <ul className="list-group">
+            {listText.map( item => <ListGroupItem key={item.id} text={item.text} /> )}
         </ul>
-    )
+    );
 }
 
 
 ReactDOM.render(<ListGroup />, document.getElementById('root'))
-
-
-// (listText.map((list) => {<li className='list-group-item' key={listItems[0]}>{list}</li>)
