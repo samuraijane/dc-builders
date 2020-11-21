@@ -22,6 +22,7 @@ let Form = () => {
             <TextInput /><br />
             <TextInput /><br />
             <YesNoRadio />
+            <YesNoRadio />
             <SubmitButton />
         </form>
     </div>);
