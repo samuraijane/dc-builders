@@ -25,7 +25,8 @@
 1. Learn why we need `state` in React components to re-rendered object.
 
 ## References
-1. [React Docs](https://jestjs.io/docs/en/getting-started)
+1. [React Props](https://reactjs.org/docs/components-and-props.html)
+1. [React Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
 
 ## Homework
 1. Complete the [homework](../homework/README.md) assignment.
