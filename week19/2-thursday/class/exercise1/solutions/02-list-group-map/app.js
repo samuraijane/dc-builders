@@ -17,9 +17,10 @@ let ListGroupItem = (props) => {
 
 let ListGroup = () => {
     return (
-    <ul className="list-group">
-        {listText.map(item => <ListGroupItem key={item.id} text={item.text} />)}
-    </ul>)
+        <ul className="list-group">
+            {listText.map( item => <ListGroupItem key={item.id} text={item.text} /> )}
+        </ul>
+    );
 }
 
 

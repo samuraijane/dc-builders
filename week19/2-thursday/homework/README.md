@@ -1,8 +1,8 @@
 # Week 19 Homework - Props practice and Class-based components.
 
-Using `create-react-app`, create a new React application for an online tic-tac-toe. The site should consist of the following _class-based_ components.
+Using `create-react-app`, create a new React application for an online tic-tac-toe. The site should consist of the following components.
 
-* App
+* App (index.js)
     * Board
         * Square
     
