@@ -8,7 +8,7 @@ Your app should:
 3) Each color should have a hex code and a "LOCK/UNLOCK" button
 4) Clicking the "Randomize Colors" buton should only randomize the colors of the unlocked sections
 
-Includes Bootstrap v4 for styling convenience. If you want an example of how to design your HTML, check out https://codepen.io/anon/pen/LqXPbB?editors=1000
+You can include Bootstrap v4 for styling convenience. If you want an example of how to design your HTML, check out https://codepen.io/anon/pen/LqXPbB?editors=1000
 
 ## Hints
 

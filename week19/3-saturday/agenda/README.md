@@ -7,7 +7,7 @@
 1. Review - React Class Components + Homework
 1. React State Demo
     1. What NOT to do
-    1. Simple React Counter Demo 
+    1. Simple React Clock Demo 
 1. [Exercise: Random Color Generator](../class/exercise/README.md)
 1. Let's make an API call in React
 1. Demo: Making API calls in React

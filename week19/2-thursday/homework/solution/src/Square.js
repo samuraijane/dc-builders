@@ -4,9 +4,9 @@ class Square extends React.Component {
 
     render() {
         switch(this.props.mark) {
-            case "X":
-                return <div>⭕️</div>
             case "O":
+                return <div>⭕️</div>
+            case "X":
                 return <div>❌</div>
             default:
                 return <div>❓</div>
