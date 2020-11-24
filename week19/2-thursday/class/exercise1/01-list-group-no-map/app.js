@@ -7,15 +7,15 @@ import ReactDOM from 'react-dom';
 const listText = [
     {id: 0, text: "Cras justo odio"},
     {id: 1, text: "Dapibus ac facilisis in"},
-    2: "Morbi leo risus",
-    3: "Porta ac consectetur ac",
-    4: "Vestibulum at eros"
+    {id: 2, text: "Morbi leo risus"},
+    {id: 3, text: "Porta ac consectetur ac"},
+    {id: 4, text: "Vestibulum at eros"}
     ]
 
 let ListGroupItem = (props) => {
 
     return (
-        <li className="list-grou-items"> {props.text}</li>
+        <li className="list-group-items"> {props.text}</li>
     )
 }
 
