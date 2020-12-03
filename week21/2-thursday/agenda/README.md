@@ -1,6 +1,6 @@
 # Week 21 – Thursday, Introduction to React Router
 
-![Almost There](https://media.giphy.com/media/xUOxfh6ZM75efM3Bqo/giphy.gif)
+![Almost There](https://media.giphy.com/media/chuber-xUOxfh6ZM75efM3Bqo/giphy.gif)
 
 ## Announcements
 1. We have only two classes left for instruction! After that, you will be building capstones until you graduate.
@@ -25,7 +25,7 @@
 1. [Learning Portal React Router](https://learn.digitalcrafts.com/flex/lessons/full-stack-frameworks/react-router/#learning-objectives)
 
 ## Homework
-1. Finish the [portfolio site](../class/exercise/README.md) if you weren't able to do so in class
+1. Finish the [portfolio site](../class/exercise/README.md) we started in class
 
 
 
