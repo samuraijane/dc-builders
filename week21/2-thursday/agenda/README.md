@@ -1,8 +1,6 @@
 # Week 21 – Thursday, Introduction to React Router
 
-![Almost There](https://media.giphy.com/media/xUOxfh6ZM75efM3Bqo/giphy.gif)
-
-![Almost There](https://media.giphy.com/media/xUOxfh6ZM75efM3Bqo/giphy.gif)
+![Almost There](https://media.giphy.com/media/WOTMeqMcNkLuXibbKz/giphy.gif)
 
 ## Announcements
 1. We have only two classes left for instruction! After that, you will be building capstones until you graduate.
