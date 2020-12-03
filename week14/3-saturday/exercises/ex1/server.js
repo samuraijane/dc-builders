@@ -9,6 +9,15 @@ app.get("/heartbeat", function(req, res) {
     });
 });
 
+app.post("/author", function(req, res) {
+    const {authorname, title, publicationdate} = req.body
+    res.json({
+        authorname,
+        publicationdate,
+        title
+    });
+});
+
 
 app.listen(3001, function() {
   console.log('The server at port 3001 is listening.');
