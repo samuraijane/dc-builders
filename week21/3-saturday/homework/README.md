@@ -1,7 +1,7 @@
 ## Dynamic Drop Down Menus
 
 Our application needs two drop down menus side-by-side. Each one has the same options–
-  * checking
+  * checking 
   * savings
 Make the menus dynamic but setting the value in one based on the selection of the other.
 For example, if I choose "checking" in the first menu, the second one should automatically populate to reveal "savings". If I choose "savings", the second one should become "checking". The same should happen if I make my selections using the second menu instead of the first.
