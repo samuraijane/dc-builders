@@ -8,9 +8,9 @@
 1. It is due Tuesday, December 22
 
 ## Agenda
-1. Homework Review / Demo of dynamic drop downs
+1. Homework Review / Demo of [dynamic drop down menus](../../../week21/3-saturday/homework/README.md)
 1. Redux Review
-1. Finish building the ACME Bank application
+1. Finish building the [ACME Bank application](../../../week21/3-saturday/class/acme-bank)
 
 ## Learning Objectives
 1. Continue learning the basics of Redux
