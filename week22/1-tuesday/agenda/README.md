@@ -22,7 +22,7 @@
 1. [Redux in the Learning Portal](https://learn.digitalcrafts.com/flex/#_20-redux) (This has way more information that we are covering and although we have added it here as a reference, the Basic Tutorial in Redux is aligned more with what we will do today.)
 
 ## A little review
-One of the challenges to learning Redux is that there are many pieces that have to fit together in order to make it work so it's difficult to spell it all out in a linear fashion without feeling overwhelmed. Obviously, the more you work with it, the more it makes sense. But from a high-level perspective, here are the steps in case you forget.
+One of the challenges to learning Redux is that there are many pieces that have to fit together in order to make it work so it's difficult to spell it all out in a linear fashion without feeling overwhelmed. Obviously, the more you work with it, the more it makes sense. But from a high-level perspective, here are the steps you would take to implement Redux with the ACME Bank application we started last Saturday.
 
 #### 01 – Create a React project
 * `npm install create-react app`
@@ -38,9 +38,9 @@ One of the challenges to learning Redux is that there are many pieces that have 
 * `mkdir src/redux/reducers`
 
 #### 04 – Add some components
-`touch src/components/checking.jsx`
-`touch src/components/landing.jsx`
-`touch src/components/savings.jsx`
+* `touch src/components/checking.jsx`
+* `touch src/components/landing.jsx`
+* `touch src/components/savings.jsx`
 
 #### 05 – Build navigation with routing
 * remember that you need to wrap the application with `<Router />`
