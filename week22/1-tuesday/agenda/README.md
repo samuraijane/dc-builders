@@ -6,6 +6,7 @@
 1. I starts in two days!
 1. It is a solo project
 1. It is due Tuesday, December 22
+1. More information [here](../../Phase3_react-project/README.md)
 
 ## Agenda
 1. Homework Review / Demo of [dynamic drop down menus](../../../week21/3-saturday/homework/README.md)
