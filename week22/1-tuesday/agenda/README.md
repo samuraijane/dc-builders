@@ -9,7 +9,7 @@
 1. More information [here](../../Phase3_react-project/README.md)
 
 ## Agenda
-1. Homework Review / Demo of [dynamic drop down menus](../../../week21/3-saturday/homework/README.md)
+1. Homework Review / Demo of [dynamic drop down menus](../../../week21/3-saturday/homework/README.md). You can see one solution to this with this [Stackblitz](https://stackblitz.com/edit/sj-react-dynamic-drop-downs?file=index.js).
 1. Redux Review
 1. Finish building the [ACME Bank application](../../../week21/3-saturday/class/acme-bank)
 
@@ -77,6 +77,3 @@ One of the challenges to learning Redux is that there are many pieces that have 
 #### 13 – Import the actions into the components
 * `mapDispatchToProps`
 * add handlers that use the actions
-
-## Homework
-1. to be determined
