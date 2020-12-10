@@ -3,7 +3,7 @@ import { Checking, Landing, Savings } from './components';
 
 const App = () => {
   return (
-    <div>
+    <div className="y-app">
       <header>
         <Link to="/">Home</Link>
         <div className="navs">

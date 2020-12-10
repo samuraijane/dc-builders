@@ -1,20 +1,18 @@
-import { TXFR_FROM_CHECKING } from "../actionTypes";
+import { DO_BILL_PAY } from "../actionTypes";
 
 const initialState = {
-  balance: 139,
   transactions: []
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case TXFR_FROM_CHECKING: {
+    case DO_BILL_PAY: {
       return {
-        ...state,  // balance: 139, transactions: []
-        balance: state.balance + action.payload.amount,
+        ...state,
         transactions: [
           ...state.transactions,
           {
-            ...action.payload.transaction
+            ...action.payload
           }
         ]
       }
