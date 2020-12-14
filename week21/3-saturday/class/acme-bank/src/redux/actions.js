@@ -17,7 +17,7 @@ export const txfrFromChecking = amount => {
 
 export const doBillPay = (amount, vendor) => dispatch => {
   console.log('pota', amount, vendor);
-  dispatch(adjustCheckingBalance(amount));
+  dispatch(adjustCheckingBalance(-1 * amount));
   dispatch(recordBillPay(amount, vendor));
 };
 

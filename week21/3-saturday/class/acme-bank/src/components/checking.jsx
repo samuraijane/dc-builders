@@ -19,7 +19,7 @@ const Checking = ({ balance, billpayTransactions, transactions }) => {
       <li key={`date-index`}>
         <span>{date}</span>
         <span>{destination}</span>
-        <span>{amount}</span>
+        <span>- {amount}</span>
       </li>
     )
   });
