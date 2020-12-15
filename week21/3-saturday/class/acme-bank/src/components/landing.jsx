@@ -1,12 +1,16 @@
 import { connect } from "react-redux";
 import { useState } from "react";
-import { doBillPay, txfrFromChecking } from '../redux/actions';
+import {
+  doBillPay,
+  requestRepresentative,
+  txfrFromChecking
+} from '../redux/actions';
 
 const Landing = props => {
 
-  const [amount, setAmount]                           = useState('');
-  const [billPayVendor, setBillPayVendor]             = useState('');
-  const [billPayAmt, setBillPayAmt]                   = useState('');
+  const [amount, setAmount]               = useState('');
+  const [billPayVendor, setBillPayVendor] = useState('');
+  const [billPayAmt, setBillPayAmt]       = useState('');
 
   const handleChange = e => {
     if (isNaN(parseInt(e.target.value))) {
@@ -26,6 +30,10 @@ const Landing = props => {
     props.doBillPay(billPayAmt, billPayVendor);
     setBillPayAmt("");
     setBillPayVendor("");
+  }
+
+  const handleRequestRepresentative = () => {
+    props.requestRepresentative();
   }
 
   const handleBillPayChange = e => {
@@ -97,12 +105,36 @@ const Landing = props => {
         </div>
         <button onClick={handleBillPaySubmit}>Submit</button>
       </div>
+
+      <div className="view__block">
+        <h2>Contact Customer Service</h2>
+        <div className="customer-service">
+          <button onClick={handleRequestRepresentative}>Request a Representative</button>
+          {props.representative.avatar && (
+            <>
+              <div className="customer-service__nimg">
+                <img src={props.representative.avatar} />
+              </div>
+              <p>What can I help you with today?</p>
+            </>
+          )}
+          {props.representative.error && (
+            <>
+              <div className="customer-service__error">
+                <p>Oops! <i>{props.representative.error}</i></p>
+              </div>
+              <p>Chat is temporarily unavailable. We apologize for the inconvenience.</p>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
 
 const mapDispatchToProps = dispatch => ({
   doBillPay: (amount, vendor) => dispatch(doBillPay(amount, vendor)),
+  requestRepresentative: () => dispatch(requestRepresentative()),
   txfrFromChecking: (val) => dispatch(txfrFromChecking(val))
 });
 
@@ -114,6 +146,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   checking: state.checking.balance,
+  representative: state.representative,
   savings: state.savings.balance
 })
 

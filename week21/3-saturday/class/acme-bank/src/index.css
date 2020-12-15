@@ -60,6 +60,21 @@ main {
   justify-content: space-around;
 }
 
+.customer-service {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-service__nimg {
+  max-width: 360px;
+}
+
+.customer-service__nimg img {
+  height: auto;
+  width: 100%;
+}
+
 .accounts__account,
 .pform__column {
   align-items: center;
